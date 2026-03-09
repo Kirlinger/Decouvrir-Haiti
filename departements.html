@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Départements d'Haïti — Découvrir Haïti</title>
+  <meta name="description" content="Les dix départements d'Haïti : géographie, capitales, économie locale, culture et caractéristiques de chaque région du pays." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand" aria-label="Accueil Découvrir Haïti">
+        <div class="navbar__flag"><img src="assets/flags/haiti-flag.svg" alt="Drapeau haïtien" width="36" height="24" /></div>
+        <div class="navbar__logo">Découvrir Haïti<span>Plateforme culturelle &amp; historique</span></div>
+      </a>
+      <button class="navbar__toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__menu" id="main-menu" role="list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="histoire.html">Histoire</a></li>
+        <li><a href="chronologie.html">Chronologie</a></li>
+        <li><a href="dirigeants.html">Dirigeants</a></li>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="departements.html">Départements</a></li>
+        <li><a href="economie.html">Économie</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="vodou.html">Vodou</a></li>
+        <li><a href="gastronomie.html">Gastronomie</a></li>
+        <li><a href="tourisme.html">Tourisme</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <p class="page-header__breadcrumb"><a href="index.html">Accueil</a> › Départements</p>
+      <h1>Les Départements d'Haïti</h1>
+      <p>Géographie, capitales, culture et économie des dix départements qui composent la République</p>
+    </div>
+  </header>
+
+  <!-- INTRO GEOGRAPHIE -->
+  <section class="section section--alt" aria-labelledby="geo-intro-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Organisation territoriale</span>
+        <h2 id="geo-intro-heading">Haïti : géographie générale</h2>
+      </div>
+      <div class="two-col" style="align-items:start;">
+        <div>
+          <div class="info-box">
+            <h3>Situation géographique</h3>
+            <p>Haïti occupe le tiers occidental de l'île d'Hispaniola, dans la mer des Caraïbes. Elle partage une frontière terrestre de 360 km avec la République dominicaine à l'est. Le pays est situé entre 18° et 20° de latitude nord, à environ 800 km au sud-est de la Floride et à 1 600 km au nord-est du Venezuela.</p>
+            <p>Le territoire national couvre <strong>27 750 km²</strong>, dont environ 75 % de relief montagneux. Haïti est l'un des pays les plus montagneux des Caraïbes, avec plusieurs massifs culminant à plus de 2 000 mètres.</p>
+          </div>
+          <div class="info-box info-box--gold" style="margin-top:1.5rem;">
+            <h3>Relief et hydrographie</h3>
+            <p>Le relief haïtien est dominé par cinq massifs principaux : le Massif du Nord, le Massif Central, la Chaîne des Matheux, le Massif de la Selle (point culminant : Pic la Selle, 2 680 m) et le Massif de la Hotte. Entre ces massifs s'étendent des plaines fertiles comme la Plaine du Nord, la Plaine de l'Artibonite et la Plaine des Cayes.</p>
+            <p>Le fleuve Artibonite est le plus long fleuve d'Haïti et le plus important pour l'agriculture. Le Lac Azuéï (Lac de la Madeleine) et l'Étang Saumâtre, près de la frontière dominicaine, sont les principales étendues d'eau intérieures.</p>
+          </div>
+        </div>
+        <div>
+          <div class="stats-grid" style="grid-template-columns:repeat(2,1fr); margin-bottom:1.5rem;">
+            <div class="stat-card">
+              <div class="stat-card__value">27 750</div>
+              <div class="stat-card__label">km² de superficie</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">10</div>
+              <div class="stat-card__label">Départements</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">42</div>
+              <div class="stat-card__label">Arrondissements</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">145</div>
+              <div class="stat-card__label">Communes</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">2 680 m</div>
+              <div class="stat-card__label">Pic la Selle (sommet)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">360 km</div>
+              <div class="stat-card__label">Frontière avec la RD</div>
+            </div>
+          </div>
+          <div class="info-box info-box--red">
+            <h3>Administration territoriale</h3>
+            <p>La Constitution de 1987 divise Haïti en dix départements, eux-mêmes subdivisés en 42 arrondissements et 145 communes. Chaque commune comprend des sections communales dirigées par des CASEC (Conseil d'Administration de Section Communale). Les conseils départementaux siègent au niveau des chefs-lieux de département.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LES 10 DEPARTEMENTS -->
+  <section class="section" aria-labelledby="depts-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Les dix départements</span>
+        <h2 id="depts-heading">Portrait de chaque département</h2>
+        <p>Chaque département possède sa géographie propre, ses ressources, sa culture et ses enjeux de développement.</p>
+      </div>
+
+      <div class="cards-grid" style="grid-template-columns:repeat(auto-fill,minmax(320px,1fr));">
+
+        <!-- 1. OUEST -->
+        <article class="dept-card">
+          <div class="dept-card__header">
+            <span class="dept-card__num">01</span>
+            <span class="dept-card__name">Département de l'Ouest</span>
+          </div>
+          <div class="dept-card__body">
+            <p class="dept-card__capital">Chef-lieu : Port-au-Prince</p>
+            <p>Le département de l'Ouest est le plus peuplé du pays et concentre l'essentiel des institutions politiques, économiques et administratives d'Haïti. Port-au-Prince, la capitale nationale, abrite les sièges des ministères, le Parlement, la présidence et les grandes institutions financières. La plaine du Cul-de-Sac, autrefois très fertile, entoure la capitale.</p>
+            <p>Le département comprend également les villes de Pétionville, Croix-des-Bouquets, Léogâne, Jacmel (chef-lieu du Sud-Est, parfois associé) et des zones côtières comme Arcahaie et Saint-Marc. La pression démographique sur Port-au-Prince est considérable, générant une expansion incontrôlée des zones péri-urbaines. Le séisme du 12 janvier 2010 a frappé ce département de plein fouet.</p>
+            <div class="dept-card__tags">
+              <span class="dept-tag">Capitale nationale</span>
+              <span class="dept-tag">Commerce</span>
+              <span class="dept-tag">Industrie</span>
+              <span class="dept-tag">Port principal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. ARTIBONITE -->
+        <article class="dept-card">
+          <div class="dept-card__header dept-card__header--green">
+            <span class="dept-card__num">02</span>
+            <span class="dept-card__name">Département de l'Artibonite</span>
+          </div>
+          <div class="dept-card__body">
+            <p class="dept-card__capital">Chef-lieu : Gonaïves</p>
+            <p>L'Artibonite est le grenier agricole d'Haïti. La plaine de l'Artibonite, irriguée par le fleuve éponyme, est la plus grande plaine agricole du pays et le principal producteur de riz. Gonaïves, la "Cité de l'Indépendance", est la ville où Jean-Jacques Dessalines proclama l'indépendance haïtienne le 1er janvier 1804.</p>
+            <p>Le département comprend aussi les villes de Saint-Marc, Desdunes, Verrettes et Gros-Morne. La vallée de l'Artibonite est traversée par le barrage hydroélectrique de Péligre, principale source d'électricité du pays. La région est aussi touchée par des inondations saisonnières sévères.</p>
+            <div class="dept-card__tags">
+              <span class="dept-tag">Agriculture</span>
+              <span class="dept-tag">Riz</span>
+              <span class="dept-tag">Hydroélectricité</span>
+              <span class="dept-tag">Indépendance</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. NORD -->
+        <article class="dept-card">
+          <div class="dept-card__header dept-card__header--indigo">
+            <span class="dept-card__num">03</span>
+            <span class="dept-card__name">Département du Nord</span>
+          </div>
+          <div class="dept-card__body">
+            <p class="dept-card__capital">Chef-lieu : Cap-Haïtien</p>
+            <p>Le Nord est le berceau historique de la colonie de Saint-Domingue et l'un des départements les plus importants sur le plan patrimonial. Cap-Haïtien, anciennement Le Cap-Français, fut la capitale coloniale et la ville la plus riche des Amériques au XVIIIe siècle. Le département abrite la Citadelle Laferrière et le Palais Sans-Souci, classés au patrimoine mondial de l'UNESCO.</p>
+            <p>La plaine du Nord, autrefois couverte de plantations sucrières, offre encore un important potentiel agricole. Le port de Cap-Haïtien est le second port du pays. Le tourisme historique constitue l'atout majeur de développement de la région.</p>
+            <div class="dept-card__tags">
+              <span class="dept-tag">Patrimoine UNESCO</span>
+              <span class="dept-tag">Citadelle</span>
+              <span class="dept-tag">Tourisme</span>
+              <span class="dept-tag">Histoire coloniale</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. SUD -->
+        <article class="dept-card">
+          <div class="dept-card__header dept-card__header--teal">
+            <span class="dept-card__num">04</span>
+            <span class="dept-card__name">Département du Sud</span>
+          </div>
+          <div class="dept-card__body">
+            <p class="dept-card__capital">Chef-lieu : Les Cayes</p>
+            <p>Le département du Sud est reconnu pour la beauté de ses plages, ses paysages naturels et ses ressources agricoles. Les Cayes (ou Aux Cayes) est un port actif et un centre commercial important pour le sud du pays. La région produit du café, des mangues, du cacao et des fruits tropicaux exportés.</p>
+            <p>Le Massif de la Hotte, dans la partie occidentale du département, abrite une biodiversité exceptionnelle et des espèces endémiques d'amphibiens. L'île-à-Vache, au large des Cayes, offre des plages remarquables. Port-Salut est une destination balnéaire reconnue. Les Cayes a été sévèrement frappée par le séisme du 14 août 2021.</p>
+            <div class="dept-card__tags">
+              <span class="dept-tag">Agriculture</span>
+              <span class="dept-tag">Café</span>
+              <span class="dept-tag">Biodiversité</span>
+              <span class="dept-tag">Tourisme balnéaire</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. CENTRE -->
+        <article class="dept-card">
+          <div class="dept-card__header dept-card__header--purple">
+            <span class="dept-card__num">05</span>
+            <span class="dept-card__name">Département du Centre</span>
+          </div>
+          <div class="dept-card__body">
+            <p class="dept-card__capital">Chef-lieu : Hinche</p>
+            <p>Le département du Centre est le coeur géographique d'Haïti. Il est traversé par le Plateau Central, région montagneuse et fertile qui fut longtemps un bastion de résistance paysanne. Hinche est une ville de taille modeste mais stratégique, proche de la frontière dominicaine.</p>
+            <p>Le barrage de Péligre et le lac de retenue d'eau qu'il forme se trouvent à la limite du département du Centre et de l'Artibonite. La région est importante pour l'élevage bovin. Les ONG et missionnaires ont historiquement été très présents dans cette zone, notamment autour de Mirebalais où l'Hôpital Universitaire de Mirebalais, construit après 2010, est une référence médicale.</p>
+            <div class="dept-card__tags">
+              <span class="dept-tag">Plateau Central</span>
+              <span class="dept-tag">Élevage</span>
+              <span class="dept-tag">Barrage Péligre</span>
+              <span class="dept-tag">Frontière</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. GRAND'ANSE -->
+        <article class="dept-card">
+          <div class="dept-card__header dept-card__header--green">
+            <span class="dept-card__num">06</span>
+            <span class="dept-card__name">Département de la Grand'Anse</span>
+          </div>
+          <div class="dept-card__body">
+            <p class="dept-card__capital">Chef-lieu : Jérémie</p>
+            <p>La Grand'Anse occupe la péninsule méridionale d'Haïti et est l'un des départements les plus isolés géographiquement. Jérémie, surnommée la "Cité des Poètes" en raison du nombre de poètes et d'écrivains qui y sont nés, est accessible principalement par voie maritime ou aérienne. La région est couverte de forêts tropicales humides parmi les mieux préservées du pays.</p>
+            <p>Le département produit du cacao, du café, du vétiver et des fruits. Le vétiver haïtien, notamment cultivé dans cette région, est l'un des meilleurs au monde et est utilisé dans la parfumerie de luxe internationale. L'ouragan Matthew (2016) a dévasté cette région, détruisant la quasi-totalité des cultures et des habitations.</p>
+            <div class="dept-card__tags">
+              <span class="dept-tag">Vétiver</span>
+              <span class="dept-tag">Cacao</span>
+              <span class="dept-tag">Forêts</span>
+              <span class="dept-tag">Cité des Poètes</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. NORD-EST -->
+        <article class="dept-card">
+          <div class="dept-card__header dept-card__header--orange">
+            <span class="dept-card__num">07</span>
+            <span class="dept-card__name">Département du Nord-Est</span>
+          </div>
+          <div class="dept-card__body">
+            <p class="dept-card__capital">Chef-lieu : Fort-Liberté</p>
+            <p>Le Nord-Est est l'un des départements les moins densément peuplés d'Haïti. Fort-Liberté, anciennement Fort-Dauphin, est une ville côtière dotée d'une belle baie naturelle protégée. Le département partage une longue frontière avec la République dominicaine et les échanges commerciaux transfrontaliers y sont importants.</p>
+            <p>Ouanaminthe est la ville frontalière la plus active, avec un marché binational hebdomadaire très animé. La région dispose de terres agricoles sous-exploitées et d'un potentiel minier. Le Parc industriel d'Ouanaminthe, construit avec des investissements dominicains, offre des emplois dans le textile.</p>
+            <div class="dept-card__tags">
+              <span class="dept-tag">Frontière</span>
+              <span class="dept-tag">Commerce transfrontalier</span>
+              <span class="dept-tag">Textile</span>
+              <span class="dept-tag">Agriculture</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. NORD-OUEST -->
+        <article class="dept-card">
+          <div class="dept-card__header dept-card__header--slate">
+            <span class="dept-card__num">08</span>
+            <span class="dept-card__name">Département du Nord-Ouest</span>
+          </div>
+          <div class="dept-card__body">
+            <p class="dept-card__capital">Chef-lieu : Port-de-Paix</p>
+            <p>Le Nord-Ouest est l'un des départements les plus pauvres et les plus touchés par la déforestation et la sécheresse. Port-de-Paix est le principal port de la région. L'île de la Tortue (Tortuga), au large du chef-lieu, est historiquement célèbre comme base des boucaniers et flibustiers du XVIIe siècle.</p>
+            <p>La pénurie d'eau potable et la dégradation environnementale sont des défis majeurs de la région. Jean-Rabel a été le théâtre d'un massacre en 1987 où des paysans furent massacrés par des propriétaires terriens et leurs alliés. La région dispose cependant d'un potentiel halieutique et touristique (île de la Tortue).</p>
+            <div class="dept-card__tags">
+              <span class="dept-tag">Île de la Tortue</span>
+              <span class="dept-tag">Pêche</span>
+              <span class="dept-tag">Patrimoine maritime</span>
+              <span class="dept-tag">Déforestation</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. SUD-EST -->
+        <article class="dept-card">
+          <div class="dept-card__header dept-card__header--red">
+            <span class="dept-card__num">09</span>
+            <span class="dept-card__name">Département du Sud-Est</span>
+          </div>
+          <div class="dept-card__body">
+            <p class="dept-card__capital">Chef-lieu : Jacmel</p>
+            <p>Le département du Sud-Est est réputé pour Jacmel, l'une des plus belles villes d'Haïti et un joyau architectural du XIXe siècle. Jacmel est connue pour son carnaval, ses arts et artisanat, ses maisons en fer forgé d'inspiration parisienne et sa scène artistique vivante. Elle est classée au Patrimoine mondial en attente par l'UNESCO.</p>
+            <p>Le département est traversé par le Massif de la Selle, qui abrite le Pic la Selle, point culminant d'Haïti à 2 680 m. Les sources naturelles et la beauté des paysages font de la région un centre potentiel d'écotourisme. Belle-Anse est une autre ville côtière notable. La région produit du café et des produits agricoles de qualité.</p>
+            <div class="dept-card__tags">
+              <span class="dept-tag">Jacmel</span>
+              <span class="dept-tag">Arts et artisanat</span>
+              <span class="dept-tag">Carnaval</span>
+              <span class="dept-tag">Pic la Selle</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. NIPPES -->
+        <article class="dept-card">
+          <div class="dept-card__header dept-card__header--gold">
+            <span class="dept-card__num">10</span>
+            <span class="dept-card__name">Département des Nippes</span>
+          </div>
+          <div class="dept-card__body">
+            <p class="dept-card__capital">Chef-lieu : Miragoâne</p>
+            <p>Le département des Nippes est le plus récent d'Haïti, créé en 2003 par détachement du département du Sud. Miragoâne est une ville portuaire sur le golfe de la Gonâve. La région est reconnue pour sa tradition agricole et notamment la production de mangues Francisque, exportées aux États-Unis et en Europe.</p>
+            <p>Petit-Trou-de-Nippes et Baradères sont des villes côtières connues pour la pêche artisanale. Le département dispose d'un important littoral sur le golfe de la Gonâve et sur la côte sud. Les ressources halieutiques et l'agriculture fruitière sont les principaux moteurs économiques locaux. Les Nippes ont été fortement affectées par le séisme de 2021.</p>
+            <div class="dept-card__tags">
+              <span class="dept-tag">Mangues Francisque</span>
+              <span class="dept-tag">Pêche</span>
+              <span class="dept-tag">Golfe de la Gonâve</span>
+              <span class="dept-tag">Agriculture</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ILE DE LA GONAVE -->
+  <section class="section section--alt" aria-labelledby="gonave-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Île principale</span>
+        <h2 id="gonave-heading">L'île de la Gonâve</h2>
+      </div>
+      <div class="info-box">
+        <h3>Une île rattachée au département de l'Ouest</h3>
+        <p>L'île de la Gonâve est la plus grande île d'Haïti, rattachée administrativement au département de l'Ouest. Elle s'étend sur environ 680 km² dans le golfe du même nom, entre la presqu'île du Nord-Ouest et la presqu'île du Sud. Sa population est estimée à environ 80 000 habitants, concentrés dans les communes d'Anse-à-Galets et de Pointe-à-Raquette.</p>
+        <p>L'île souffre d'un enclavement sévère, d'un manque d'eau potable et d'infrastructures insuffisantes. Mais elle possède un potentiel environnemental et touristique notable, avec des plages préservées et une faune marine riche. La Gonâve est également connue pour ses traditions vodou et sa culture rurale particulière.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESSOURCES GEOGRAPHIQUES -->
+  <section class="section" aria-labelledby="geo-ressources-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Richesses territoriales</span>
+        <h2 id="geo-ressources-heading">Ressources et potentiel des territoires</h2>
+        <p>Chaque région d'Haïti dispose de ressources spécifiques, souvent sous-exploitées ou dégradées par des décennies de mauvaise gestion.</p>
+      </div>
+      <div class="resource-grid">
+        <div class="resource-card resource-card--green">
+          <div class="resource-card__icon">🌾</div>
+          <h3>Plaines agricoles</h3>
+          <p>La plaine de l'Artibonite, la plaine du Nord, la plaine des Cayes et la plaine du Cul-de-Sac constituent les zones les plus fertiles du territoire. Elles produisent riz, maïs, sorgho, haricots, canne à sucre et légumes.</p>
+        </div>
+        <div class="resource-card resource-card--teal">
+          <div class="resource-card__icon">🐟</div>
+          <h3>Ressources maritimes</h3>
+          <p>Le littoral haïtien s'étend sur 1 771 km. La pêche artisanale emploie des dizaines de milliers de familles. Les eaux territoriales sont riches en poissons, crustacés et ressources sous-marines encore peu exploitées commercialement.</p>
+        </div>
+        <div class="resource-card resource-card--gold">
+          <div class="resource-card__icon">⛏️</div>
+          <h3>Ressources minières</h3>
+          <p>Des études géologiques ont mis en évidence d'importants gisements de cuivre, d'or, d'argent, de bauxite et de calcaire. Le nord du pays concentre une partie significative du potentiel minier. La question de l'exploitation reste politiquement sensible et environnementalement débattue.</p>
+        </div>
+        <div class="resource-card">
+          <div class="resource-card__icon">💧</div>
+          <h3>Ressources en eau</h3>
+          <p>Haïti possède de nombreuses rivières, sources et nappes phréatiques. Le fleuve Artibonite et ses affluents représentent un potentiel hydraulique important. La gestion de l'eau est cependant critique : beaucoup de zones rurales manquent d'accès à l'eau potable, et la déforestation aggrave la situation.</p>
+        </div>
+        <div class="resource-card resource-card--red">
+          <div class="resource-card__icon">🌲</div>
+          <h3>Forêts et biodiversité</h3>
+          <p>Haïti a perdu plus de 98 % de sa couverture forestière originelle. Les quelques forêts restantes, notamment dans le Massif de la Hotte et la Grand'Anse, abritent des espèces endémiques d'une valeur écologique mondiale. La reforestation est un enjeu national majeur.</p>
+        </div>
+        <div class="resource-card resource-card--gold">
+          <div class="resource-card__icon">☀️</div>
+          <h3>Énergie renouvelable</h3>
+          <p>Le potentiel en énergie solaire et éolienne d'Haïti est considérable, compte tenu de son ensoleillement et de sa situation géographique. Ces ressources demeurent très largement sous-exploitées alors qu'une grande partie de la population n'a pas accès à l'électricité.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEFORESTATION -->
+  <section class="section section--alt" aria-labelledby="deforest-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Crise environnementale</span>
+        <h2 id="deforest-heading">La déforestation : un désastre national</h2>
+      </div>
+      <div class="two-col">
+        <div class="info-box info-box--red">
+          <h3>Une catastrophe visible depuis l'espace</h3>
+          <p>Le contraste entre Haïti (moins de 2 % de couverture forestière) et la République dominicaine voisine (environ 42 % de forêts) est visible sur les images satellites. Cette déforestation massive est le résultat de deux siècles de coupe de bois pour le charbon végétal, de politiques agricoles défaillantes et d'une pauvreté qui pousse les populations rurales à utiliser le bois comme unique source d'énergie.</p>
+          <p>La perte du couvert forestier provoque une érosion des sols catastrophique, des inondations meurtrières, la disparition des sources d'eau et l'appauvrissement des terres agricoles. Chaque ouragan qui frappe Haïti cause des dégâts disproportionnés par rapport aux pays voisins en raison de cet état de dégradation.</p>
+        </div>
+        <div>
+          <div class="info-box" style="margin-bottom:1.5rem;">
+            <h3>Les causes profondes</h3>
+            <p>La dépendance au charbon de bois pour la cuisine est la principale cause de la déforestation actuelle. Environ 70 % de l'énergie utilisée en Haïti pour la cuisson provient du bois ou du charbon végétal. Sans alternative énergétique accessible et abordable, les communautés rurales n'ont pas d'autre choix que de continuer à déforester.</p>
+          </div>
+          <div class="info-box info-box--gold">
+            <h3>Initiatives de reforestation</h3>
+            <p>Plusieurs programmes de reforestation ont été lancés par le gouvernement haïtien et des ONG depuis les années 1980. Le projet PAPDA, le programme "Vert Haïti" et divers projets locaux ont planté des millions d'arbres. Cependant, les résultats restent insuffisants face à l'ampleur de la destruction et à la pression continue sur les forêts restantes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <div class="footer__flag"><img src="assets/flags/haiti-flag.svg" alt="Drapeau haïtien" width="40" height="27" /></div>
+            <span class="footer__brand-name">Découvrir Haïti</span>
+          </div>
+          <p class="footer__desc">Plateforme culturelle et historique dédiée à Haïti, à sa mémoire, à sa culture, son histoire et ses institutions.</p>
+          <p class="footer__author">Par Kirlinger Jeune</p>
+        </div>
+        <div>
+          <p class="footer__heading">Histoire &amp; Territoire</p>
+          <ul class="footer__links">
+            <li><a href="histoire.html">Histoire générale</a></li>
+            <li><a href="chronologie.html">Chronologie</a></li>
+            <li><a href="dirigeants.html">Dirigeants</a></li>
+            <li><a href="departements.html">Départements</a></li>
+            <li><a href="constitution.html">Constitution</a></li>
+            <li><a href="economie.html">Économie</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Culture</p>
+          <ul class="footer__links">
+            <li><a href="culture.html">Culture haïtienne</a></li>
+            <li><a href="vodou.html">Vodou &amp; Lwa</a></li>
+            <li><a href="gastronomie.html">Gastronomie</a></li>
+            <li><a href="jours-feries.html">Jours fériés</a></li>
+            <li><a href="tourisme.html">Tourisme</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">À propos</p>
+          <ul class="footer__links">
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Découvrir Haïti — <a href="contact.html">Kirlinger Jeune</a></p>
+        <p>L'Union fait la Force</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Retour en haut de page">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

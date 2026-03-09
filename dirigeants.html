@@ -4,51 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dirigeants d'Haïti — Découvrir Haïti</title>
-  <meta name="description" content="Présidents, empereurs, gouverneurs et grandes figures politiques qui ont dirigé Haïti depuis son indépendance en 1804." />
+  <meta name="description" content="Liste complète de tous les présidents, empereurs, rois et chefs d'État d'Haïti depuis 1804." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
-    .search-bar {
-      max-width: 480px;
-      margin: 0 auto 3rem;
-      position: relative;
-    }
+    .search-bar { max-width:480px; margin:0 auto 3rem; position:relative; }
     .search-bar input {
-      width: 100%;
-      padding: .75rem 1.25rem .75rem 3rem;
-      border: 2px solid var(--border);
-      border-radius: 999px;
-      font-family: var(--font-body);
-      font-size: .95rem;
-      outline: none;
-      transition: border-color .25s;
+      width:100%; padding:.75rem 1.25rem .75rem 3rem;
+      border:2px solid var(--border); border-radius:999px;
+      font-family:var(--font-body); font-size:.95rem; outline:none;
+      transition:border-color .25s; background:var(--white);
     }
-    .search-bar input:focus { border-color: var(--blue-haiti); }
-    .search-bar::before {
-      content: '🔍';
-      position: absolute;
-      left: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: .9rem;
-    }
-    .era-title {
-      font-family: var(--font-head);
-      font-size: 1.4rem;
-      color: var(--blue-haiti);
-      border-bottom: 2px solid var(--border);
-      padding-bottom: .5rem;
-      margin: 3rem 0 1.5rem;
+    .search-bar input:focus { border-color:var(--blue-haiti); }
+    .search-bar .search-icon {
+      position:absolute; left:1.1rem; top:50%;
+      transform:translateY(-50%); color:var(--text-light); pointer-events:none;
     }
   </style>
 </head>
 <body>
-
   <nav class="navbar" role="navigation" aria-label="Navigation principale">
     <div class="container navbar__inner">
-      <a href="index.html" class="navbar__brand">
+      <a href="index.html" class="navbar__brand" aria-label="Accueil">
         <div class="navbar__flag"><img src="assets/flags/haiti-flag.svg" alt="Drapeau haïtien" width="36" height="24" /></div>
         <div class="navbar__logo">Découvrir Haïti<span>Plateforme culturelle &amp; historique</span></div>
       </a>
@@ -61,10 +40,11 @@
         <li><a href="chronologie.html">Chronologie</a></li>
         <li><a href="dirigeants.html">Dirigeants</a></li>
         <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="departements.html">Départements</a></li>
+        <li><a href="economie.html">Économie</a></li>
         <li><a href="culture.html">Culture</a></li>
         <li><a href="vodou.html">Vodou</a></li>
         <li><a href="gastronomie.html">Gastronomie</a></li>
-        <li><a href="jours-feries.html">Jours fériés</a></li>
         <li><a href="tourisme.html">Tourisme</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -75,251 +55,600 @@
     <div class="container">
       <p class="page-header__breadcrumb"><a href="index.html">Accueil</a> › Dirigeants</p>
       <h1>Les Dirigeants d'Haïti</h1>
-      <p>Présidents, empereurs, gouverneurs et grandes figures historiques depuis 1804</p>
+      <p>Tous les présidents, empereurs, rois, gouverneurs et chefs d'État depuis l'indépendance de 1804</p>
     </div>
   </header>
 
   <section class="section section--alt">
     <div class="container">
+      <div class="section-header">
+        <span class="tag">Liste complète</span>
+        <h2>Tous les chefs d'État d'Haïti</h2>
+        <p>De Toussaint Louverture aux gouvernements de transition contemporains, l'histoire du pouvoir haïtien.</p>
+      </div>
 
-      <div class="search-bar">
+      <div class="search-bar" role="search">
+        <span class="search-icon" aria-hidden="true">&#128269;</span>
         <input type="search" id="leader-search" placeholder="Rechercher un dirigeant…" aria-label="Rechercher un dirigeant" />
       </div>
 
-      <!-- FONDATEURS -->
-      <h2 class="era-title">Les Pères fondateurs</h2>
+      <div class="era-divider">
+        <div class="era-divider__line"></div>
+        <span class="era-divider__label">Période révolutionnaire (1791–1804)</span>
+        <div class="era-divider__line era-divider__line--right"></div>
+      </div>
       <div class="cards-grid">
-
         <article class="leader-card">
-          <div class="leader-card__header">🏛️</div>
-          <div class="leader-card__body">
-            <h3 class="leader-card__name">Jean-Jacques Dessalines</h3>
-            <p class="leader-card__period">Gouverneur général (1804) — Empereur Jacques Ier (1804–1806)</p>
-            <p class="leader-card__desc">Ancien esclave devenu général brillant, Dessalines fut le principal artisan de la victoire contre les forces napoléoniennes. Il proclama l'indépendance d'Haïti le 1er janvier 1804 à Gonaïves, devenant le père fondateur de la nation. Proclamé Empereur en 1804, il fut assassiné en 1806. Son nom est gravé dans l'hymne national haïtien.</p>
-          </div>
-        </article>
-
-        <article class="leader-card">
-          <div class="leader-card__header">⚔️</div>
+          
           <div class="leader-card__body">
             <h3 class="leader-card__name">Toussaint Louverture</h3>
-            <p class="leader-card__period">Gouverneur général (1801–1802)</p>
-            <p class="leader-card__desc">Né esclave, Toussaint Louverture devint l'un des plus grands stratèges militaires de son époque. Il abolit l'esclavage à Saint-Domingue en 1793, rédigea la Constitution de 1801 et fit de Saint-Domingue une colonie quasi indépendante. Trahi et déporté en France par Napoléon, il mourut au Fort de Joux le 7 avril 1803. Symbole universel de la liberté.</p>
+            <p class="leader-card__period">Gouverneur général de Saint-Domingue — 1801 à 1802</p>
+            <p class="leader-card__desc">Né esclave en 1743, Toussaint devint un stratège militaire de génie. Il abolit l'esclavage en 1793, rédigea la Constitution de 1801 et fit de Saint-Domingue une colonie quasi indépendante. Trahi par Napoléon, il fut déporté en France et mourut au Fort de Joux le 7 avril 1803, quelques mois avant l'indépendance qu'il avait rendue possible. Symbole universel de liberté.</p>
           </div>
         </article>
-
         <article class="leader-card">
-          <div class="leader-card__header">👑</div>
+          <div class="leader-card__header" style="background:linear-gradient(135deg,#D21034,#a00020)"></div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Jean-Jacques Dessalines</h3>
+            <p class="leader-card__period">Gouverneur général (1804) — Empereur Jacques I (1804–1806)</p>
+            <p class="leader-card__desc">Ancien esclave, Dessalines fut l'artisan militaire principal de la victoire contre les forces napoléoniennes à Vertières le 18 novembre 1803. Il proclama l'indépendance d'Haïti le 1er janvier 1804 à Gonaïves et lacéra le drapeau français pour créer le bicolore haïtien. Proclamé Empereur en octobre 1804, il fut assassiné à Pont-Rouge le 17 octobre 1806. Son nom est gravé dans l'hymne national haïtien.</p>
+          </div>
+        </article>
+      </div>
+      <div class="era-divider">
+        <div class="era-divider__line"></div>
+        <span class="era-divider__label">Haïti divisée : Nord et Sud (1806–1820)</span>
+        <div class="era-divider__line era-divider__line--right"></div>
+      </div>
+      <div class="cards-grid">
+        <article class="leader-card">
+          <div class="leader-card__header" style="background:linear-gradient(135deg,#4338ca,#3730a3)"></div>
           <div class="leader-card__body">
             <h3 class="leader-card__name">Henri Christophe</h3>
-            <p class="leader-card__period">Président du Nord (1807–1811) — Roi Henri Ier (1811–1820)</p>
-            <p class="leader-card__desc">Ancien esclave d'origine inconnue, Henri Christophe gouverna le nord d'Haïti avec une main de fer. Il fit bâtir la Citadelle Laferrière et le Palais Sans-Souci — chefs-d'œuvre architecturaux aujourd'hui classés au patrimoine mondial de l'UNESCO. Atteint d'une paralysie, il se suicida en 1820.</p>
+            <p class="leader-card__period">Président du Nord (1807–1811) — Roi Henri I (1811–1820)</p>
+            <p class="leader-card__desc">Né esclave aux Antilles, Christophe gouverna le nord d'Haïti avec autorité. Se proclamant Roi en 1811, il fit construire la Citadelle Laferrière et le Palais Sans-Souci, deux chefs-d'œuvre architecturaux classés au patrimoine mondial de l'UNESCO. Son régime, sévère, posa les bases d'une administration moderne. Atteint d'une paralysie, il se suicida d'une balle dorée en 1820.</p>
           </div>
         </article>
-
         <article class="leader-card">
-          <div class="leader-card__header">🕊️</div>
+          <div class="leader-card__header" style="background:linear-gradient(135deg,#0891b2,#0e7490)"></div>
           <div class="leader-card__body">
             <h3 class="leader-card__name">Alexandre Pétion</h3>
-            <p class="leader-card__period">Président de la République du Sud (1807–1818)</p>
-            <p class="leader-card__desc">Mulâtre de la bourgeoisie libre, Pétion gouverna la République du Sud avec une philosophie résolument républicaine et égalitariste. Il distribua des terres aux paysans, accueillit Simón Bolívar et lui fournit armes et soldats pour libérer l'Amérique du Sud. Considéré comme un président humaniste et progressiste.</p>
+            <p class="leader-card__period">Président de la République du Sud — 1807 à 1818</p>
+            <p class="leader-card__desc">Officier mulâtre républicain, Pétion gouverna le sud avec humanisme. Il distribua des terres aux anciens esclaves et soldats. Il accueillit Simón Bolívar en exil et lui fournit armes et soldats pour libérer l'Amérique du Sud, à la condition unique d'abolir l'esclavage dans les territoires libérés. Il mourut en office en 1818 d'une fièvre jaune, unanimement respecté.</p>
           </div>
         </article>
-
       </div>
-
-      <!-- XIXe SIÈCLE -->
-      <h2 class="era-title">Le XIXe siècle (1818–1915)</h2>
+      <div class="era-divider">
+        <div class="era-divider__line"></div>
+        <span class="era-divider__label">Haïti réunifiée : premiers présidents (1818–1847)</span>
+        <div class="era-divider__line era-divider__line--right"></div>
+      </div>
       <div class="cards-grid">
-
         <article class="leader-card">
-          <div class="leader-card__header">🗺️</div>
+          
           <div class="leader-card__body">
             <h3 class="leader-card__name">Jean-Pierre Boyer</h3>
-            <p class="leader-card__period">Président (1818–1843)</p>
-            <p class="leader-card__desc">Boyer réunifica Haïti en 1820 après la mort de Christophe et Pétion. En 1822, il annexa la partie espagnole de l'île. En 1825, il accepta de payer 150 millions de francs-or à la France pour obtenir la reconnaissance internationale. Renversé en 1843, il s'exila en Europe.</p>
+            <p class="leader-card__period">Président — 1818 à 1843</p>
+            <p class="leader-card__desc">Boyer réunifica Haïti après la mort de Christophe et Pétion. En 1822, il annexa la partie espagnole de l'île pour 22 ans. En 1825, il signa l'accord de l'indemnité : Haïti versa 150 millions de francs-or à la France pour obtenir la reconnaissance internationale, hypothéquant l'économie nationale pendant 122 ans. Renversé en 1843, il s'exila à Paris.</p>
           </div>
         </article>
-
         <article class="leader-card">
-          <div class="leader-card__header">🏛️</div>
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Charles Rivière-Hérard</h3>
+            <p class="leader-card__period">Chef du gouvernement provisoire — janvier à mai 1843</p>
+            <p class="leader-card__desc">Officier libéral ayant renversé Boyer, Rivière-Hérard gouverna brièvement. Pendant son court gouvernement, la partie orientale de l'île proclama son indépendance le 27 février 1843, devenant la République dominicaine. Il fut lui-même renversé par la révolte des paysans du Piquet peu après et s'exila.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Philippe Guerrier</h3>
+            <p class="leader-card__period">Président — 1844 à 1845</p>
+            <p class="leader-card__desc">Vieux général de la guerre d'indépendance, Guerrier fut élu par les chambres pour sa stature symbolique. Son gouvernement tenta sans succès de reprendre la partie orientale après la proclamation de l'indépendance dominicaine. Il mourut en office en avril 1845.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Louis Pierrot</h3>
+            <p class="leader-card__period">Président — 1845 à 1846</p>
+            <p class="leader-card__desc">Général de l'indépendance, Pierrot fut élu président à l'âge avancé de 80 ans. Autoritaire, il gouverna sans le parlement et fut renversé par une insurrection militaire en février 1846 après moins d'un an au pouvoir.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Jean-Baptiste Riché</h3>
+            <p class="leader-card__period">Président — 1846 à 1847</p>
+            <p class="leader-card__desc">Général respecté, Riché prit le pouvoir après Pierrot et chercha à rétablir l'ordre. Il mourut en office en février 1847 après un règne de moins d'un an, laissant la voie libre à Faustin Soulouque.</p>
+          </div>
+        </article>
+      </div>
+      <div class="era-divider">
+        <div class="era-divider__line"></div>
+        <span class="era-divider__label">Second Empire et instabilité (1847–1879)</span>
+        <div class="era-divider__line era-divider__line--right"></div>
+      </div>
+      <div class="cards-grid">
+        <article class="leader-card">
+          <div class="leader-card__header" style="background:linear-gradient(135deg,#C8971A,#a67b14)"></div>
           <div class="leader-card__body">
             <h3 class="leader-card__name">Faustin Soulouque</h3>
-            <p class="leader-card__period">Président (1847–1849) — Empereur Faustin Ier (1849–1859)</p>
-            <p class="leader-card__desc">Général de l'armée, élu président par l'élite qui pensait le manipuler, Soulouque prit en main le pouvoir et se proclama Empereur en 1849. Il tenta à deux reprises de reprendre la partie orientale de l'île. Renversé en 1859, il s'exila en Jamaïque puis en France.</p>
+            <p class="leader-card__period">Président (1847–1849) — Empereur Faustin I (1849–1859)</p>
+            <p class="leader-card__desc">Ancien esclave devenu général, Soulouque fut choisi par l'élite mulâtre qui pensait le manipuler. Il déjoua ces calculs, renversa ses adversaires et se proclama Empereur Faustin I en 1849. Il tenta deux expéditions militaires pour reprendre la partie orientale de l'île, toutes deux soldées par des échecs. Renversé en janvier 1859, il s'exila en Jamaïque puis en France où il mourut en 1867.</p>
           </div>
         </article>
-
         <article class="leader-card">
-          <div class="leader-card__header">📚</div>
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Fabre Nicolas Geffrard</h3>
+            <p class="leader-card__period">Président — 1859 à 1867</p>
+            <p class="leader-card__desc">Général ayant renversé Soulouque, Geffrard restaura la République, développa l'enseignement public et signa un concordat avec le Saint-Siège (1860). En 1862, les États-Unis reconnurent officiellement Haïti. Renversé par une insurrection en 1867, il s'exila en Jamaïque.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Sylvain Salnave</h3>
+            <p class="leader-card__period">Président — 1867 à 1869</p>
+            <p class="leader-card__desc">Officier populaire, Salnave gouverna dans une guerre civile permanente contre les Cacos du nord. Capturé après sa défaite, il fut traduit devant un conseil de guerre et fusillé en janvier 1870 à Port-au-Prince.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Nissage Saget</h3>
+            <p class="leader-card__period">Président — 1870 à 1874</p>
+            <p class="leader-card__desc">Général libéral, Saget présida l'une des périodes les plus paisibles du XIXe siècle haïtien. Il introduisit des réformes administratives. Fait rare : il choisit de ne pas se représenter à l'expiration de son mandat constitutionnel.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Michel Domingue</h3>
+            <p class="leader-card__period">Président — 1874 à 1876</p>
+            <p class="leader-card__desc">Général, Domingue fut élu président après Saget. Son gouvernement contracta un emprunt extérieur à des conditions défavorables. Il fut renversé en 1876 par une insurrection populaire et s'exila à Kingston.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Boisrond-Canal</h3>
+            <p class="leader-card__period">Président — 1876 à 1879, puis 1888 (provisoire)</p>
+            <p class="leader-card__desc">Homme d'État libéral, Boisrond-Canal instaura une politique de modération et démissionna volontairement en 1879 face aux tensions politiques. Il revint brièvement au pouvoir comme président provisoire en 1888. Respecté pour son intégrité relative.</p>
+          </div>
+        </article>
+      </div>
+      <div class="era-divider">
+        <div class="era-divider__line"></div>
+        <span class="era-divider__label">Réformes et fin du XIXe siècle (1879–1915)</span>
+        <div class="era-divider__line era-divider__line--right"></div>
+      </div>
+      <div class="cards-grid">
+        <article class="leader-card">
+          
           <div class="leader-card__body">
             <h3 class="leader-card__name">Lysius Salomon</h3>
-            <p class="leader-card__period">Président (1879–1888)</p>
-            <p class="leader-card__desc">Économiste et homme d'État, Salomon fonda la Banque nationale d'Haïti en 1880. Il modernisa l'administration et favorisa l'éducation. Son mandat, marqué par des réformes économiques importantes, fut cependant émaillé de troubles politiques.</p>
+            <p class="leader-card__period">Président — 1879 à 1888</p>
+            <p class="leader-card__desc">Économiste et homme d'État réformateur, Salomon fonda la Banque nationale d'Haïti en 1880, développa l'enseignement public et les routes. Son autoritarisme lui aliéna de nombreux soutiens. Tentant de se maintenir au-delà de son mandat, il fut contraint à l'exil en 1888.</p>
           </div>
         </article>
-
         <article class="leader-card">
-          <div class="leader-card__header">🎓</div>
+          
           <div class="leader-card__body">
             <h3 class="leader-card__name">Florvil Hyppolite</h3>
-            <p class="leader-card__period">Président (1889–1896)</p>
-            <p class="leader-card__desc">Son mandat fut marqué par d'importants travaux d'infrastructure, notamment la construction de ponts et l'extension du réseau télégraphique. Il résista aux pressions américaines pour céder la péninsule de Mole Saint-Nicolas comme base navale.</p>
+            <p class="leader-card__period">Président — 1889 à 1896</p>
+            <p class="leader-card__desc">Général du nord, Hyppolite réalisa d'importantes infrastructures : le marché en fer de Port-au-Prince, l'extension du réseau télégraphique, la modernisation des ports. Il résista aux pressions américaines pour céder Mole Saint-Nicolas comme base navale, préservant la souveraineté nationale. Il mourut en office en 1896.</p>
           </div>
         </article>
-
         <article class="leader-card">
-          <div class="leader-card__header">🌹</div>
+          
           <div class="leader-card__body">
-            <h3 class="leader-card__name">Anténor Firmin</h3>
-            <p class="leader-card__period">Intellectuel et homme politique (1850–1911)</p>
-            <p class="leader-card__desc">Intellectuel haïtien majeur, Firmin publia en 1885 <em>De l'égalité des races humaines</em>, réfutation savante du racisme scientifique de Gobineau. Candidat à la présidence, il ne put jamais accéder au pouvoir malgré son influence intellectuelle immense.</p>
+            <h3 class="leader-card__name">Tirésias Simon Sam</h3>
+            <p class="leader-card__period">Président — 1896 à 1902</p>
+            <p class="leader-card__desc">Fils d'un général de l'indépendance, Simon Sam gouverna dans le contexte des rivalités entre factions militaires. Il se retira au terme de son mandat constitutionnel de 7 ans, l'un des rares à le faire volontairement.</p>
           </div>
         </article>
-
         <article class="leader-card">
-          <div class="leader-card__header">✊</div>
+          
           <div class="leader-card__body">
-            <h3 class="leader-card__name">Charlemagne Péralte</h3>
-            <p class="leader-card__period">Chef de la résistance Cacos (1883–1919)</p>
-            <p class="leader-card__desc">Officier de l'armée haïtienne, Charlemagne Péralte organisa la résistance armée contre l'occupation américaine. À la tête de plusieurs milliers de « Cacos », il harcela les forces occupantes. Il fut assassiné le 1er novembre 1919 par un agent américain. Son image crucifiée, diffusée par les Américains pour terroriser, devint un symbole de martyrat et de résistance nationale.</p>
+            <h3 class="leader-card__name">Nord Alexis</h3>
+            <p class="leader-card__period">Président — 1902 à 1908</p>
+            <p class="leader-card__desc">Général octogénaire, Nord Alexis gouverna dans des difficultés financières croissantes et une dépendance aux puissances étrangères. Renversé en 1908 par une insurrection militaire, il s'exila en Jamaïque.</p>
           </div>
         </article>
-
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Antoine Simon</h3>
+            <p class="leader-card__period">Président — 1908 à 1911</p>
+            <p class="leader-card__desc">Général sudiste, Simon succéda à Nord Alexis. Son gouvernement accorda des concessions à des compagnies américaines pour la culture des bananes, marquant la pénétration économique américaine. Il fut renversé par Leconte en 1911.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Cincinnatus Leconte</h3>
+            <p class="leader-card__period">Président — 1911 à 1912</p>
+            <p class="leader-card__desc">Général du nord, Leconte s'engagea dans des réformes administratives. Il mourut le 8 août 1912 dans l'explosion du Palais national, dans des circonstances non élucidées (incendie ou attentat). Cette explosion symbolisa la fragilité institutionnelle haïtienne.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Tancrède Auguste</h3>
+            <p class="leader-card__period">Président — 1912 à 1913</p>
+            <p class="leader-card__desc">Élu par le parlement après Leconte, Auguste tenta de ramener la stabilité. Il mourut en mai 1913, probablement empoisonné selon certains historiens. Sa mort précipita une nouvelle crise de succession.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Michel Oreste</h3>
+            <p class="leader-card__period">Président — 1913 à 1914</p>
+            <p class="leader-card__desc">Avocat et magistrat, Oreste fut élu pour ramener l'ordre. Son gouvernement civil fut balayé en janvier 1914 par une révolte militaire. Les pressions américaines pour une intervention directe s'intensifiaient alors dangereusement.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Oreste Zamor</h3>
+            <p class="leader-card__period">Président — février à octobre 1914</p>
+            <p class="leader-card__desc">Général ayant renversé Michel Oreste, Zamor gouverna quelques mois dans un contexte de chaos total. Il fut lui-même renversé par Davilmar Théodore en octobre 1914, illustrant l'effondrement de toute légitimité institutionnelle.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Davilmar Théodore</h3>
+            <p class="leader-card__period">Président — octobre 1914 à février 1915</p>
+            <p class="leader-card__desc">Gouvernement précédant immédiatement l'occupation américaine, Théodore ne put gouverner que quelques mois. Les Marines américains débarquèrent peu après, précipitant 19 ans d'occupation.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Vilbrun Guillaume Sam</h3>
+            <p class="leader-card__period">Président — mars à juillet 1915</p>
+            <p class="leader-card__desc">Dernier président avant l'occupation, Guillaume Sam fit massacrer plus de 160 prisonniers politiques en juillet 1915. En représailles, une foule l'assassina et le démembra dans les rues de Port-au-Prince. Ce chaos servit de prétexte aux États-Unis pour débarquer leurs Marines le 28 juillet 1915.</p>
+          </div>
+        </article>
       </div>
-
-      <!-- OCCUPATION AMÉRICAINE -->
-      <h2 class="era-title">Présidents de l'époque de l'occupation (1915–1934)</h2>
+      <div class="info-box info-box--red" style="margin:2rem 0;">
+        <h3>L'occupation américaine d'Haïti (1915–1934)</h3>
+        <p>Le 28 juillet 1915, les États-Unis débarquèrent leurs Marines en Haïti. Cette occupation de 19 ans transféra le contrôle des finances haïtiennes, de la gendarmerie et de nombreuses institutions au gouvernement américain. La Constitution de 1918, rédigée sous dictée américaine, permit pour la première fois aux étrangers de posséder des terres en Haïti, brisant une interdiction fondamentale depuis Dessalines. La résistance des Cacos, menée par Charlemagne Péralte, fut matée dans le sang. Plus de 15 000 Haïtiens moururent pendant l'occupation selon certaines estimations.</p>
+      </div>
+      <div class="era-divider">
+        <div class="era-divider__line"></div>
+        <span class="era-divider__label">Occupation américaine (1915–1934)</span>
+        <div class="era-divider__line era-divider__line--right"></div>
+      </div>
       <div class="cards-grid">
-
         <article class="leader-card">
-          <div class="leader-card__header">🏛️</div>
+          
           <div class="leader-card__body">
-            <h3 class="leader-card__name">Sudre Dartiguenave</h3>
-            <p class="leader-card__period">Président (1915–1922)</p>
-            <p class="leader-card__desc">Président élu par le parlement sous pression américaine après le débarquement des Marines. Signa le traité controversé de 1915 donnant aux États-Unis le contrôle des finances haïtiennes. Son mandat est associé à la soumission au pouvoir occupant.</p>
+            <h3 class="leader-card__name">Philippe Sudre Dartiguenave</h3>
+            <p class="leader-card__period">Président — 1915 à 1922</p>
+            <p class="leader-card__desc">Élu sous pression directe des Marines, Dartiguenave signa le traité du 16 septembre 1915 cédant aux États-Unis le contrôle des finances haïtiennes. Il présida l'adoption de la Constitution de 1918 rédigée sous dictée américaine, qui permit aux étrangers de posséder des terres. Son gouvernement fut celui d'un protectorat de facto.</p>
           </div>
         </article>
-
         <article class="leader-card">
-          <div class="leader-card__header">🏛️</div>
+          
           <div class="leader-card__body">
             <h3 class="leader-card__name">Louis Borno</h3>
-            <p class="leader-card__period">Président (1922–1930)</p>
-            <p class="leader-card__desc">Avocat et diplomate, Borno gouverna sous l'étroite tutelle américaine. Il s'appuya sur les occupants pour gouverner sans parlement. Son administration vit néanmoins quelques investissements en infrastructure et en santé publique.</p>
+            <p class="leader-card__period">Président — 1922 à 1930</p>
+            <p class="leader-card__desc">Borno gouverna en étroite collaboration avec l'occupant américain, supprimant le parlement haïtien et gouvernant par décrets avec l'assentiment du Haut commissaire américain. Sa politique s'effondra lors du soulèvement populaire de 1929 qui poussa les États-Unis à commencer leur retrait.</p>
           </div>
         </article>
-
         <article class="leader-card">
-          <div class="leader-card__header">🕊️</div>
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Louis Roy</h3>
+            <p class="leader-card__period">Président provisoire — mai à novembre 1930</p>
+            <p class="leader-card__desc">Juge de la Cour de cassation, Roy assura la transition entre Borno et les premières élections libres depuis 1918. Son rôle fut essentiellement transitoire dans la préparation du retrait américain.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
           <div class="leader-card__body">
             <h3 class="leader-card__name">Sténio Vincent</h3>
-            <p class="leader-card__period">Président (1930–1941)</p>
-            <p class="leader-card__desc">Nationaliste haïtien, Vincent négocia habilement le retrait des troupes américaines en 1934. Sous son mandat, Haïti retrouva sa pleine souveraineté formelle. Il renforça le mouvement culturel indigéniste qui valorisait les traditions haïtiennes.</p>
+            <p class="leader-card__period">Président — 1930 à 1941</p>
+            <p class="leader-card__desc">Nationaliste haïtien, Vincent négocia le retrait complet des troupes américaines, achevé en 1934. Il renforça le mouvement culturel indigéniste. Cependant il gouverna de manière de plus en plus autoritaire. En 1937, il demeura silencieux face au massacre de 15 000 à 20 000 Haïtiens en République dominicaine par Trujillo.</p>
           </div>
         </article>
-
       </div>
-
-      <!-- ERE POST-OCCUPATION -->
-      <h2 class="era-title">L'ère post-occupation et la montée du duvaliérisme (1934–1957)</h2>
+      <div class="era-divider">
+        <div class="era-divider__line"></div>
+        <span class="era-divider__label">L'ère post-occupation (1941–1957)</span>
+        <div class="era-divider__line era-divider__line--right"></div>
+      </div>
       <div class="cards-grid">
-
         <article class="leader-card">
-          <div class="leader-card__header">📖</div>
+          
           <div class="leader-card__body">
             <h3 class="leader-card__name">Élie Lescot</h3>
-            <p class="leader-card__period">Président (1941–1946)</p>
-            <p class="leader-card__desc">Renversé par une révolution populaire en 1946, son mandat fut marqué par la complicité avec les États-Unis, la campagne anti-vodou de 1941–1942 menée avec l'Église catholique (destruction de temples, persécutions), et l'entrée en guerre aux côtés des Alliés en 1941.</p>
+            <p class="leader-card__period">Président — 1941 à 1946</p>
+            <p class="leader-card__desc">Lescot organisa la campagne antisuperstitieuse de 1941-1942 avec l'Église catholique : destruction systématique des temples vodou et persécution des pratiquants. Son gouvernement entra en guerre aux côtés des Alliés. Renversé par une révolution populaire en janvier 1946.</p>
           </div>
         </article>
-
         <article class="leader-card">
-          <div class="leader-card__header">🏛️</div>
+          
           <div class="leader-card__body">
             <h3 class="leader-card__name">Dumarsais Estimé</h3>
-            <p class="leader-card__period">Président (1946–1950)</p>
-            <p class="leader-card__desc">Premier président noir depuis l'époque de Salomon, Estimé symbolisa l'émergence politique de la classe moyenne noire. Il promulgua une constitution progressiste, développa le tourisme et les droits des travailleurs. Renversé par un coup d'État militaire en 1950.</p>
+            <p class="leader-card__period">Président — 1946 à 1950</p>
+            <p class="leader-card__desc">Premier président noir depuis Salomon, Estimé représenta l'émergence politique de la classe moyenne noire. Il promulgua une constitution progressiste, augmenta le salaire minimum et développa les droits des travailleurs. Sa tentative de prolonger son mandat provoqua un coup d'État militaire en mai 1950.</p>
           </div>
         </article>
-
         <article class="leader-card">
-          <div class="leader-card__header">⚔️</div>
+          
           <div class="leader-card__body">
-            <h3 class="leader-card__name">Paul Magloire</h3>
-            <p class="leader-card__period">Président (1950–1956)</p>
-            <p class="leader-card__desc">Général et président, Magloire présida une période de relative stabilité économique. L'ouragan Hazel (1954) dévasta toutefois le pays. Renversé en 1956 lors d'une crise politique, il s'exila.</p>
+            <h3 class="leader-card__name">Paul Eugène Magloire</h3>
+            <p class="leader-card__period">Président — 1950 à 1956</p>
+            <p class="leader-card__desc">Général charismatique, Magloire présida une période de relative prospérité. L'ouragan Hazel dévasta Haïti en octobre 1954. Face aux pressions pour prolonger son mandat, il démissionna en décembre 1956 et s'exila, ouvrant une longue période d'instabilité.</p>
           </div>
         </article>
-
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Joseph Nemours Pierre-Louis</h3>
+            <p class="leader-card__period">Président provisoire — décembre 1956 à février 1957</p>
+            <p class="leader-card__desc">Juge de la Cour de cassation, Pierre-Louis assura une transition chaotique. Confronté à une grève générale et aux pressions de l'armée, il ne put tenir que deux mois avant d'être remplacé.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Franck Sylvain</h3>
+            <p class="leader-card__period">Président provisoire — février à avril 1957</p>
+            <p class="leader-card__desc">Cadre civile, Sylvain assura une transition provisoire de deux mois dans une période d'extrême instabilité. Il fut remplacé par un Conseil exécutif gouvernemental sous pression militaire.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Conseil exécutif gouvernemental</h3>
+            <p class="leader-card__period">Gouvernement de transition — avril à mai 1957</p>
+            <p class="leader-card__desc">Une junte militaire et civile prit le pouvoir en avril 1957. Ce conseil collégial organisa des élections tout en étant déchiré par les rivalités entre candidats. La période fut marquée par des violences électorales et la montée de Duvalier.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Daniel Fignolé</h3>
+            <p class="leader-card__period">Président provisoire — mai à juin 1957</p>
+            <p class="leader-card__desc">Leader charismatique des masses populaires, Fignolé accéda à la présidence provisoire mais fut renversé par l'armée après seulement 19 jours au pouvoir. Exilé en juillet 1957, son éviction ouvrit directement la voie à la dictature duvaliériste.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Antonio Kébreau (Conseil militaire)</h3>
+            <p class="leader-card__period">Chef du Conseil militaire — juin à octobre 1957</p>
+            <p class="leader-card__desc">Général, Kébreau dirigea le conseil militaire qui renversa Fignolé et organisa les élections du 22 septembre 1957 portant Duvalier au pouvoir. L'armée croyait choisir un président manipulable. Elle se trompait lourdement.</p>
+          </div>
+        </article>
       </div>
-
-      <!-- DUVALIÉRISME -->
-      <h2 class="era-title">La dictature duvaliériste (1957–1986)</h2>
-      <div class="cards-grid">
-
-        <article class="leader-card">
-          <div class="leader-card__header">🩺</div>
-          <div class="leader-card__body">
-            <h3 class="leader-card__name">François Duvalier « Papa Doc »</h3>
-            <p class="leader-card__period">Président (1957–1964) — Président à vie (1964–1971)</p>
-            <p class="leader-card__desc">Médecin et anthropologue, Duvalier remporta les élections en 1957 avec le soutien de l'armée. Il instaura une dictature féroce, éradiquant toute opposition, créant les Tonton Macoutes. En 1964, il se proclama président à vie. Son régime causa l'exil de plus de 100 000 Haïtiens et le massacre de milliers d'opposants.</p>
-          </div>
-        </article>
-
-        <article class="leader-card">
-          <div class="leader-card__header">🏛️</div>
-          <div class="leader-card__body">
-            <h3 class="leader-card__name">Jean-Claude Duvalier « Baby Doc »</h3>
-            <p class="leader-card__period">Président à vie (1971–1986)</p>
-            <p class="leader-card__desc">Succédant à son père à 19 ans, Jean-Claude maintint la dictature mais l'assouplit légèrement pour attirer les investissements étrangers. Marié à Michèle Bennett en 1980, sa vie de luxe ostentatoire contrastait avec la misère du peuple. Un soulèvement populaire le força à l'exil en France le 7 février 1986.</p>
-          </div>
-        </article>
-
+      <div class="info-box info-box--red" style="margin:2rem 0;">
+        <h3>Vingt-neuf ans de dictature duvaliériste (1957–1986)</h3>
+        <p>La famille Duvalier gouverna Haïti de 1957 à 1986. Sous père puis fils, l'État devint un instrument de terreur : Tonton Macoutes (milice privée), massacre des opposants, exil de l'intelligentsia, pillage systématique du trésor public. On estime que le régime causa la mort de 30 000 à 60 000 personnes et l'exil forcé de plus de 200 000 Haïtiens.</p>
       </div>
-
-      <!-- ERE DEMOCRATIQUE -->
-      <h2 class="era-title">La période démocratique (1986–aujourd'hui)</h2>
+      <div class="era-divider">
+        <div class="era-divider__line"></div>
+        <span class="era-divider__label">La dictature duvaliériste (1957–1986)</span>
+        <div class="era-divider__line era-divider__line--right"></div>
+      </div>
       <div class="cards-grid">
-
         <article class="leader-card">
-          <div class="leader-card__header">⛪</div>
+          <div class="leader-card__header" style="background:linear-gradient(135deg,#111827,#374151)"></div>
           <div class="leader-card__body">
-            <h3 class="leader-card__name">Jean-Bertrand Aristide</h3>
-            <p class="leader-card__period">Président (1991, 1994–1996, 2001–2004)</p>
-            <p class="leader-card__desc">Prêtre salésien des bidonvilles de Port-au-Prince, Aristide remporta les premières élections libres d'Haïti en 1990 avec 67 % des voix. Renversé par un coup d'État militaire en 1991, il revint au pouvoir en 1994 grâce à une intervention américaine. Réélu en 2000, il fut contraint à l'exil en 2004.</p>
+            <h3 class="leader-card__name">François Duvalier dit Papa Doc</h3>
+            <p class="leader-card__period">Président élu (1957–1964) — Président à vie (1964–1971)</p>
+            <p class="leader-card__desc">Médecin et anthropologue réputé, Duvalier construisit son image sur la défense de la culture noire. Élu en 1957 avec l'appui de l'armée, il instaura une dictature totalitaire. Il créa les Tonton Macoutes, milice paramilitaire hors contrôle légal. En 1964, il se proclama Président à vie. Les opposants furent torturés au Fort Dimanche, assassinés ou exilés. Il mourut en office le 21 avril 1971 et transféra le pouvoir à son fils de 19 ans.</p>
           </div>
         </article>
-
         <article class="leader-card">
-          <div class="leader-card__header">🎓</div>
+          <div class="leader-card__header" style="background:linear-gradient(135deg,#374151,#111827)"></div>
           <div class="leader-card__body">
-            <h3 class="leader-card__name">René Préval</h3>
-            <p class="leader-card__period">Président (1996–2001, 2006–2011)</p>
-            <p class="leader-card__desc">Agronome proche d'Aristide, Préval fut le seul président haïtien à terminer deux mandats complets. Sa deuxième présidence coïncida avec le séisme dévastateur de janvier 2010, qu'il dut gérer dans des conditions extrêmes. Figure de modération dans la politique haïtienne.</p>
+            <h3 class="leader-card__name">Jean-Claude Duvalier dit Baby Doc</h3>
+            <p class="leader-card__period">Président à vie — 1971 à 1986</p>
+            <p class="leader-card__desc">Succédant à son père à 19 ans, Jean-Claude libéralisa superficiellement le régime pour attirer les investissements étrangers. Son mariage fastueux avec Michèle Bennett en 1980 symbolisa l'indécence du régime face à la misère. Un soulèvement populaire (le Déchoukaj) le balaya. Le 7 février 1986, il prit l'avion pour la France, emportant une fortune estimée à plusieurs centaines de millions de dollars détournés des caisses publiques. Il revint en Haïti en 2011 et mourut d'une crise cardiaque en 2014 sans avoir jamais été jugé.</p>
           </div>
         </article>
-
+      </div>
+      <div class="era-divider">
+        <div class="era-divider__line"></div>
+        <span class="era-divider__label">Post-duvaliérisme et transition démocratique (1986–1994)</span>
+        <div class="era-divider__line era-divider__line--right"></div>
+      </div>
+      <div class="cards-grid">
         <article class="leader-card">
-          <div class="leader-card__header">🎵</div>
+          
           <div class="leader-card__body">
-            <h3 class="leader-card__name">Michel Martelly</h3>
-            <p class="leader-card__period">Président (2011–2016)</p>
-            <p class="leader-card__desc">Chanteur de kompa populaire connu sous le nom de « Sweet Micky », Martelly remporta l'élection présidentielle de 2011. Son mandat fut marqué par des investissements dans l'éducation (programme EBA — École à Bureaucratie Accessible), des tensions politiques et des allégations de corruption.</p>
+            <h3 class="leader-card__name">Henri Namphy (premier mandat)</h3>
+            <p class="leader-card__period">Chef du Conseil national de gouvernement (CNG) — 1986 à 1988</p>
+            <p class="leader-card__desc">Général, Namphy prit le pouvoir après le départ de Duvalier à la tête d'un conseil militaire. Si le Déchoukaj espérait une rupture totale, le CNG maintint de nombreux cadres duvaliéristes. Le massacre des électeurs du 29 novembre 1987 interrompit les élections démocratiques.</p>
           </div>
         </article>
-
         <article class="leader-card">
-          <div class="leader-card__header">🌾</div>
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Leslie Manigat</h3>
+            <p class="leader-card__period">Président — février à juin 1988</p>
+            <p class="leader-card__desc">Politologue et universitaire, Manigat fut élu dans des conditions frauduleuses. Quand il tenta d'affirmer son autorité civile face à l'armée, Namphy organisa un coup d'État. Il fut chassé du pouvoir en juin 1988 après seulement 4 mois. Il revint en politique des décennies plus tard et atteignit le second tour des élections de 2011.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Henri Namphy (second mandat)</h3>
+            <p class="leader-card__period">Chef d'État — juin à septembre 1988</p>
+            <p class="leader-card__desc">Revenu au pouvoir, Namphy présida un gouvernement encore plus brutal. En septembre 1988, des miliciens attaquèrent l'église Saint-Jean Bosco pendant une messe célébrée par Aristide, tuant 13 personnes. Namphy fut lui-même renversé quelques jours plus tard par ses propres officiers.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Prosper Avril</h3>
+            <p class="leader-card__period">Chef d'État — septembre 1988 à mars 1990</p>
+            <p class="leader-card__desc">Général, Avril prit le pouvoir après avoir renversé Namphy. Son gouvernement fut marqué par des violations graves des droits humains documentées par Amnesty International. Sous pression internationale, il démissionna en mars 1990. Il fut plus tard extradé en Haïti et condamné pour violations des droits humains.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Ertha Pascal-Trouillot</h3>
+            <p class="leader-card__period">Présidente provisoire — mars 1990 à février 1991</p>
+            <p class="leader-card__desc">Juge de la Cour de cassation et première femme à diriger Haïti, Pascal-Trouillot organisa les premières élections vraiment libres de l'histoire haïtienne, remportées de manière écrasante par Jean-Bertrand Aristide en décembre 1990. Sa transition pacifique fut une première dans l'histoire haïtienne moderne.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Jean-Bertrand Aristide (premier mandat)</h3>
+            <p class="leader-card__period">Président — février à septembre 1991</p>
+            <p class="leader-card__desc">Prêtre salésien des bidonvilles, Aristide remporta les élections de décembre 1990 avec 67 % des voix. Renversé par un coup d'État militaire après seulement 7 mois au pouvoir, il fut exilé à Washington. Son éviction provoqua une répression brutale contre ses partisans par la junte Cédras.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Raoul Cédras (gouvernement de facto)</h3>
+            <p class="leader-card__period">Chef militaire de facto — octobre 1991 à octobre 1994</p>
+            <p class="leader-card__desc">Général putschiste, Cédras dirigea la junte qui renversa Aristide. Pendant trois ans, le régime mena une répression brutale causant des milliers de morts. En 1994, sous la menace d'une intervention militaire américaine, Cédras quitta Haïti pour le Panama avec une aide financière américaine à son départ, fait qui suscita une vive indignation internationale.</p>
+          </div>
+        </article>
+      </div>
+      <div class="era-divider">
+        <div class="era-divider__line"></div>
+        <span class="era-divider__label">Ère contemporaine (1994–présent)</span>
+        <div class="era-divider__line era-divider__line--right"></div>
+      </div>
+      <div class="cards-grid">
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Jean-Bertrand Aristide (restauré)</h3>
+            <p class="leader-card__period">Président — octobre 1994 à février 1996</p>
+            <p class="leader-card__desc">Aristide fut restauré au pouvoir en octobre 1994 grâce à une intervention américaine après 3 ans de junte. Il dissout les Forces armées d'Haïti (FAd'H) en 1994 et créa la Police Nationale. Il termina son mandat en 1996 et remit pacifiquement le pouvoir à René Préval.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">René Préval (premier mandat)</h3>
+            <p class="leader-card__period">Président — 1996 à 2001</p>
+            <p class="leader-card__desc">Agronome et proche collaborateur d'Aristide, Préval fut le premier président haïtien à terminer un mandat complet et à remettre pacifiquement le pouvoir à un successeur démocratiquement élu. Son mandat vit l'adoption de politiques économiques libérales sous pression du FMI et la privatisation controversée d'entreprises publiques.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Jean-Bertrand Aristide (second mandat)</h3>
+            <p class="leader-card__period">Président — 2001 à 2004</p>
+            <p class="leader-card__desc">Réélu en 2000 avec une large majorité, Aristide gouverna dans un contexte de contestation croissante et de blocage institutionnel. En 2004, lors d'une révolte armée combinée à une pression internationale coordonnée, il fut contraint à l'exil dans des circonstances qu'il qualifie de coup d'État. Depuis, il vit en Haïti.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Boniface Alexandre</h3>
+            <p class="leader-card__period">Président provisoire — mars 2004 à mai 2006</p>
+            <p class="leader-card__desc">Président de la Cour de cassation, Alexandre assuma la présidence provisoire après le départ d'Aristide. Sous son gouvernement, la MINUSTAH fut déployée. Il organisa les élections de 2006 dans un contexte sécuritaire très difficile.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">René Préval (second mandat)</h3>
+            <p class="leader-card__period">Président — 2006 à 2011</p>
+            <p class="leader-card__desc">Réélu en 2006, Préval gouverna dans une relative stabilité avant que le séisme catastrophique du 12 janvier 2010 ne tue entre 100 000 et 300 000 personnes et détruise une grande partie de Port-au-Prince et des infrastructures nationales. Il géra cette crise immense avant de transmettre le pouvoir à Martelly en 2011. Il décéda en 2017.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Michel Martelly dit Sweet Micky</h3>
+            <p class="leader-card__period">Président — 2011 à 2016</p>
+            <p class="leader-card__desc">Chanteur de kompa populaire sans expérience politique, Martelly lança le programme EBA pour scolariser des centaines de milliers d'enfants et inaugura le Parc industriel de Caracol. Ses cinq ans furent entachés par des allégations de corruption, des tensions politiques et une incapacité à organiser des élections dans les délais, laissant le pays sans parlement fonctionnel pendant deux ans.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Jocelerme Privert</h3>
+            <p class="leader-card__period">Président provisoire — février 2016 à février 2017</p>
+            <p class="leader-card__desc">Élu président provisoire par le parlement, Privert organisa les élections présidentielles complexes de 2016-2017. Il géra également les conséquences dévastatrices de l'ouragan Matthew qui frappa le sud d'Haïti en octobre 2016, détruisant des régions entières.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          <div class="leader-card__header" style="background:linear-gradient(135deg,#D21034,#a00020)"></div>
           <div class="leader-card__body">
             <h3 class="leader-card__name">Jovenel Moïse</h3>
-            <p class="leader-card__period">Président (2017–2021)</p>
-            <p class="leader-card__desc">Entrepreneur agricole, Moïse fut élu en 2016. Son mandat fut marqué par des crises politiques profondes, des manifestations populaires massives (mouvement PetroChallenge), la montée des gangs armés et la pandémie de Covid-19. Il fut assassiné à son domicile le 7 juillet 2021 dans des circonstances encore non entièrement élucidées.</p>
+            <p class="leader-card__period">Président — 2017 à 2021 (assassiné)</p>
+            <p class="leader-card__desc">Entrepreneur dans la filière bananière, Moïse fut élu en 2016 après des élections annulées puis reprises. Son mandat fut marqué par la montée des gangs, les protestations massives du mouvement PetroChallenge dénonçant la corruption liée aux fonds Petrocaribe, la pandémie de Covid-19 et une instabilité politique profonde. Il fut assassiné dans la nuit du 6 au 7 juillet 2021 par un commando de mercenaires qui pénétrèrent dans sa résidence privée. Les commanditaires n'ont pas encore été entièrement identifiés.</p>
           </div>
         </article>
-
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Claude Joseph</h3>
+            <p class="leader-card__period">Premier ministre / Chef d'État de facto — juillet 2021</p>
+            <p class="leader-card__desc">Premier ministre par intérim au moment de l'assassinat de Moïse, Joseph assuma brièvement la direction du pays et déclara l'état de siège. Une querelle de succession l'opposa à Ariel Henry. Sous pression internationale, il céda la place à Henry.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Ariel Henry</h3>
+            <p class="leader-card__period">Premier ministre / Chef d'État de facto — juillet 2021 à mars 2024</p>
+            <p class="leader-card__desc">Neurochirurgien, Henry gouverna sans base électorale ni légitimité constitutionnelle, dans un contexte de vide institutionnel total. Son gouvernement fut incapable de mettre fin à l'expansion des gangs qui contrôlèrent progressivement une grande partie de Port-au-Prince. En mars 2024, bloqué hors d'Haïti lors d'une visite au Kenya, il finit par démissionner le 24 mars 2024.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Conseil présidentiel de transition</h3>
+            <p class="leader-card__period">Gouvernement de transition — depuis avril 2024</p>
+            <p class="leader-card__desc">Un Conseil présidentiel de transition composé de représentants des différents secteurs politiques fut mis en place en avril 2024 avec le soutien de la communauté internationale. Ce conseil supervise le déploiement d'une force multinationale de sécurité dirigée par le Kenya et prépare une transition vers des élections. Garry Conille fut nommé Premier ministre en juin 2024. Ce gouvernement fait face à des défis sécuritaires, politiques et humanitaires colossaux.</p>
+          </div>
+        </article>
       </div>
+    </div>
+  </section>
 
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Synthèse</span>
+        <h2>Le pouvoir haïtien en chiffres</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-card__value">55+</div>
+          <div class="stat-card__label">Chefs d'État depuis 1804</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__value">2</div>
+          <div class="stat-card__label">Empereurs (Dessalines et Faustin I)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__value">1</div>
+          <div class="stat-card__label">Roi (Henri I)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__value">19 ans</div>
+          <div class="stat-card__label">D'occupation américaine (1915–1934)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__value">29 ans</div>
+          <div class="stat-card__label">De dictature duvaliériste</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__value">1</div>
+          <div class="stat-card__label">Présidente (Ertha Pascal-Trouillot, 1990)</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -331,16 +660,18 @@
             <div class="footer__flag"><img src="assets/flags/haiti-flag.svg" alt="Drapeau haïtien" width="40" height="27" /></div>
             <span class="footer__brand-name">Découvrir Haïti</span>
           </div>
-          <p class="footer__desc">Plateforme culturelle et historique dédiée à Haïti.</p>
+          <p class="footer__desc">Plateforme culturelle et historique dédiée à Haïti, à sa mémoire, à sa culture, son histoire et ses institutions.</p>
           <p class="footer__author">Par Kirlinger Jeune</p>
         </div>
         <div>
-          <p class="footer__heading">Histoire</p>
+          <p class="footer__heading">Histoire &amp; Territoire</p>
           <ul class="footer__links">
             <li><a href="histoire.html">Histoire générale</a></li>
             <li><a href="chronologie.html">Chronologie</a></li>
             <li><a href="dirigeants.html">Dirigeants</a></li>
+            <li><a href="departements.html">Départements</a></li>
             <li><a href="constitution.html">Constitution</a></li>
+            <li><a href="economie.html">Économie</a></li>
           </ul>
         </div>
         <div>
@@ -350,12 +681,12 @@
             <li><a href="vodou.html">Vodou &amp; Lwa</a></li>
             <li><a href="gastronomie.html">Gastronomie</a></li>
             <li><a href="jours-feries.html">Jours fériés</a></li>
+            <li><a href="tourisme.html">Tourisme</a></li>
           </ul>
         </div>
         <div>
           <p class="footer__heading">À propos</p>
           <ul class="footer__links">
-            <li><a href="tourisme.html">Tourisme</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -367,7 +698,7 @@
     </div>
   </footer>
 
-  <button class="back-to-top" aria-label="Retour en haut de page">↑</button>
+  <button class="back-to-top" aria-label="Retour en haut de page">&#8593;</button>
   <script src="js/script.js"></script>
 </body>
 </html>

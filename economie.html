@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Économie d'Haïti — Découvrir Haïti</title>
+  <meta name="description" content="L'économie haïtienne : agriculture, commerce, ports, industrie, tourisme, remises de la diaspora, ressources naturelles et minières." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand" aria-label="Accueil Découvrir Haïti">
+        <div class="navbar__flag"><img src="assets/flags/haiti-flag.svg" alt="Drapeau haïtien" width="36" height="24" /></div>
+        <div class="navbar__logo">Découvrir Haïti<span>Plateforme culturelle &amp; historique</span></div>
+      </a>
+      <button class="navbar__toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__menu" id="main-menu" role="list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="histoire.html">Histoire</a></li>
+        <li><a href="chronologie.html">Chronologie</a></li>
+        <li><a href="dirigeants.html">Dirigeants</a></li>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="departements.html">Départements</a></li>
+        <li><a href="economie.html">Économie</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="vodou.html">Vodou</a></li>
+        <li><a href="gastronomie.html">Gastronomie</a></li>
+        <li><a href="tourisme.html">Tourisme</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <p class="page-header__breadcrumb"><a href="index.html">Accueil</a> › Économie</p>
+      <h1>L'Économie d'Haïti</h1>
+      <p>Agriculture, commerce, industrie, ressources naturelles, diaspora et perspectives de développement</p>
+    </div>
+  </header>
+
+  <!-- APERCU ECONOMIQUE -->
+  <section class="section section--alt" aria-labelledby="apercu-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Vue d'ensemble</span>
+        <h2 id="apercu-heading">Portrait économique général</h2>
+      </div>
+      <div class="two-col" style="align-items:start;">
+        <div>
+          <div class="info-box">
+            <h3>Une économie fragilisée</h3>
+            <p>Haïti est classée parmi les pays les moins développés des Amériques. Son produit intérieur brut (PIB) tourne autour de 20 milliards de dollars en parité de pouvoir d'achat, pour une population de plus de 11 millions d'habitants. Le PIB par habitant est l'un des plus bas de l'hémisphère occidental.</p>
+            <p>Cette fragilité économique est le résultat d'une longue accumulation de facteurs : instabilité politique chronique, catastrophes naturelles répétées, fardeau de la dette historique imposée par la France, occupation américaine (1915-1934), isolement commercial et dépendance à l'aide internationale.</p>
+          </div>
+          <div class="info-box info-box--red" style="margin-top:1.5rem;">
+            <h3>La dette originelle : réparation à la France</h3>
+            <p>En 1825, Haïti fut contrainte de verser 150 millions de francs-or à la France en échange de la reconnaissance de son indépendance — une indemnité destinée à "compenser" les anciens colons et esclavagistes pour la perte de leurs "biens", y compris les esclaves affranchis. Cette somme astronomique, réglée en totalité en 1947 après 122 ans de paiements, a hypothéqué toute capacité d'investissement de l'État haïtien pendant plus d'un siècle. Des chercheurs estiment que cette dette représente, avec ses intérêts, plusieurs centaines de milliards de dollars en valeur actuelle.</p>
+          </div>
+        </div>
+        <div>
+          <div class="stats-grid" style="grid-template-columns:repeat(2,1fr); margin-bottom:1.5rem;">
+            <div class="stat-card">
+              <div class="stat-card__value">~20 Md$</div>
+              <div class="stat-card__label">PIB en PPA</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">~37 %</div>
+              <div class="stat-card__label">Part de l'agriculture</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">~3,5 Md$</div>
+              <div class="stat-card__label">Remises diaspora/an</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">~60 %</div>
+              <div class="stat-card__label">Économie informelle</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">~58 %</div>
+              <div class="stat-card__label">Population sous le seuil de pauvreté</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">~24 %</div>
+              <div class="stat-card__label">Part du textile dans les exportations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGRICULTURE -->
+  <section class="section" aria-labelledby="agri-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Premier secteur</span>
+        <h2 id="agri-heading">Agriculture</h2>
+        <p>Le secteur agricole emploie la majorité de la population active haïtienne et reste le pilier de l'économie rurale.</p>
+      </div>
+
+      <div class="info-box" style="margin-bottom:2rem;">
+        <h3>Un secteur fondamental mais fragilisé</h3>
+        <p>L'agriculture représente environ 25 à 37 % du PIB haïtien selon les estimations et emploie environ 60 % de la population active. Cependant, les rendements agricoles sont très bas en raison de la dégradation des sols, du manque d'irrigation, de l'absence de mécanisation et du morcellement des terres en petites parcelles familiales.</p>
+        <p>La réforme agraire reste un enjeu politique non résolu depuis l'indépendance. La concentration des terres dans les mains de quelques familles de l'élite, héritée de la période post-révolutionnaire, continue de priver de nombreux paysans d'un accès suffisant à la terre.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="sector-card">
+          <div class="sector-card__label">Céréales</div>
+          <h3>Riz, maïs et sorgho</h3>
+          <p>Le riz est la céréale de base de l'alimentation haïtienne. Produit principalement dans la plaine de l'Artibonite, il ne suffit cependant pas à couvrir la demande nationale. Depuis les années 1990, des importations massives de riz américain subventionné ont largement détruit la production locale.</p>
+          <div class="pct-bar"><div class="pct-bar__fill" style="width:45%"></div></div>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__label">Cultures d'exportation</div>
+          <h3>Café, cacao et mangues</h3>
+          <p>Le café haïtien, notamment le "Bleu de la Selle" et le café des Nippes, est réputé pour sa qualité. Le cacao de la région de Thiotte et d'ailleurs est prisé par les chocolatiers haut de gamme. Les mangues Francisque, exportées vers les États-Unis, sont un produit d'exportation important.</p>
+          <div class="pct-bar"><div class="pct-bar__fill" style="width:60%"></div></div>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__label">Cultures commerciales</div>
+          <h3>Vétiver et canne à sucre</h3>
+          <p>Le vétiver haïtien est l'un des meilleurs au monde et une matière première précieuse pour la parfumerie de luxe (Chanel N°5, entre autres). Haïti est l'un des principaux producteurs mondiaux d'huile essentielle de vétiver. La canne à sucre, autrefois le produit phare de Saint-Domingue, est aujourd'hui produite à petite échelle.</p>
+          <div class="pct-bar"><div class="pct-bar__fill" style="width:70%"></div></div>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__label">Élevage</div>
+          <h3>Bovins, porcins et volailles</h3>
+          <p>L'élevage, notamment bovin dans le Plateau Central, constitue une ressource importante pour les familles rurales. En 1982, un programme controversé d'éradication des porcs créoles — financé par les États-Unis — a décimé l'ensemble du cheptel porcin haïtien, portant un coup sévère à l'économie paysanne.</p>
+          <div class="pct-bar"><div class="pct-bar__fill" style="width:35%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIE ET COMMERCE -->
+  <section class="section section--alt" aria-labelledby="industrie-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Secteur secondaire</span>
+        <h2 id="industrie-heading">Industrie et commerce</h2>
+      </div>
+
+      <div class="two-col" style="align-items:start; margin-bottom:2rem;">
+        <div>
+          <div class="info-box">
+            <h3>Industrie textile et sous-traitance</h3>
+            <p>Le secteur textile est aujourd'hui le principal secteur industriel d'Haïti. Les zones franches industrielles, notamment le Parc industriel de Caracol (financé par la BID et les États-Unis) et plusieurs parcs à Port-au-Prince, emploient des dizaines de milliers de travailleurs dans la confection de vêtements et textiles pour les marques américaines. Ce secteur représente plus de 80 % des exportations en valeur.</p>
+            <p>Cependant, les conditions de travail restent difficiles, les salaires très bas et la dépendance à l'égard d'un seul secteur d'exportation fragilise l'ensemble de l'économie. Les troubles politiques et l'insécurité freinent régulièrement la production.</p>
+          </div>
+        </div>
+        <div>
+          <div class="info-box info-box--gold">
+            <h3>Industries historiques disparues</h3>
+            <p>Haïti a possédé, à différentes périodes de son histoire, des industries importantes aujourd'hui disparues ou en déclin :</p>
+            <ul style="list-style:disc; padding-left:1.5rem; color:var(--text-light); font-size:.9rem;">
+              <li>Sucreries et distilleries de rhum (XIXe siècle)</li>
+              <li>Tanneries et industries du cuir</li>
+              <li>Cimenteries nationales</li>
+              <li>Moulins à farine et rizeries</li>
+              <li>Entreprises publiques de transformation alimentaire</li>
+              <li>Savonneries artisanales</li>
+            </ul>
+            <p style="margin-top:.75rem;">La libéralisation économique des années 1990, souvent imposée par les institutions financières internationales, a mis fin à nombre de ces activités en exposant le marché haïtien à des importations à bas coût.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <div class="sector-card">
+          <div class="sector-card__label">Infrastructure portuaire</div>
+          <h3>Port de Port-au-Prince</h3>
+          <p>Le Port International de Port-au-Prince est le principal port du pays et traite l'essentiel des importations et exportations. Endommagé lors du séisme de 2010, il a été partiellement reconstruit. Un second terminal conteneurs (Terminal Varreux) a été développé. Le port du Cap-Haïtien constitue le second hub portuaire national.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__label">Construction</div>
+          <h3>Secteur de la construction</h3>
+          <p>La construction est un secteur actif, notamment stimulé par la reconstruction post-séisme (2010) et les investissements de la diaspora dans l'immobilier. Cependant, le manque de normes de construction antisismiques et la prolifération de constructions informelles posent de graves risques pour la population.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__label">Commerce</div>
+          <h3>Commerce formel et informel</h3>
+          <p>Le commerce, notamment informel, est l'activité économique principale d'une large partie de la population urbaine. Les marchés ("ti-machann") structurent la vie économique locale. Le commerce transfrontalier avec la République dominicaine est important mais peu régulé. Les grandes surfaces et supermarchés restent concentrés dans les zones aisées.</p>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card__label">Télécommunications</div>
+          <h3>Mobile money et services</h3>
+          <p>Le secteur des télécommunications mobiles a connu une forte croissance. Des opérateurs comme Digicel Haiti ont permis un accès généralisé au téléphone portable. Le mobile money (comme MonCash) a introduit des services financiers pour une population largement non bancarisée et facilite les transferts de la diaspora.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIASPORA ET REMISES -->
+  <section class="section" aria-labelledby="diaspora-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Pilier économique</span>
+        <h2 id="diaspora-heading">La diaspora et les remises</h2>
+      </div>
+      <div class="highlight-box" style="margin-bottom:2rem;">
+        <h3>La dixième province : la diaspora haïtienne</h3>
+        <p>Environ 1,5 à 2 millions d'Haïtiens vivent à l'étranger, principalement aux États-Unis (Floride, New York, New Jersey, Massachusetts), au Canada (Montréal), en France, en République dominicaine, aux Bahamas et au Chili. On les appelle parfois "la dixième province". Les transferts d'argent que ces migrants envoient à leurs familles représentent de très loin la principale source de devises du pays.</p>
+        <p>Les remises de la diaspora représentent environ 30 à 40 % du PIB haïtien, soit plusieurs fois l'aide internationale reçue. Elles financent l'éducation des enfants, les soins médicaux, la construction de maisons et le quotidien de millions de familles. Sans ces transferts, l'économie haïtienne s'effondrerait.</p>
+      </div>
+      <div class="resource-grid">
+        <div class="resource-card resource-card--teal">
+          <div class="resource-card__icon">🇺🇸</div>
+          <h3>Diaspora aux États-Unis</h3>
+          <p>La communauté haïtienne-américaine est estimée à plus d'un million de personnes. Miami, New York et Boston en sont les principaux centres. Cette diaspora est politiquement active et envoie des montants considérables vers Haïti.</p>
+        </div>
+        <div class="resource-card">
+          <div class="resource-card__icon">🇨🇦</div>
+          <h3>Diaspora au Canada</h3>
+          <p>Montréal abrite la plus grande communauté haïtienne francophone hors d'Haïti, estimée à plus de 150 000 personnes. La diaspora montréalaise a joué un rôle intellectuel et culturel majeur dans l'histoire contemporaine d'Haïti.</p>
+        </div>
+        <div class="resource-card resource-card--gold">
+          <div class="resource-card__icon">🇫🇷</div>
+          <h3>Diaspora en France</h3>
+          <p>La France accueille une importante communauté haïtienne, estimée à plus de 100 000 personnes, concentrée à Paris et en région parisienne. La langue commune facilite les échanges culturels et intellectuels.</p>
+        </div>
+        <div class="resource-card resource-card--red">
+          <div class="resource-card__icon">🇩🇴</div>
+          <h3>Diaspora en République dominicaine</h3>
+          <p>Plusieurs centaines de milliers d'Haïtiens, dont beaucoup sans statut régulier, travaillent en République dominicaine, principalement dans la construction et l'agriculture. Cette communauté est souvent dans une situation de grande vulnérabilité face aux politiques migratoires dominicaines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESSOURCES NATURELLES ET MINIERES -->
+  <section class="section section--alt" aria-labelledby="ressources-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Richesses du sous-sol</span>
+        <h2 id="ressources-heading">Ressources naturelles et minières</h2>
+        <p>Haïti possède des richesses naturelles importantes, largement sous-exploitées ou négligées.</p>
+      </div>
+
+      <div class="info-box" style="margin-bottom:2rem;">
+        <h3>Un sous-sol méconnu</h3>
+        <p>Des études géologiques récentes, notamment celles menées par le Bureau des Mines et de l'Énergie (BME) d'Haïti et des organismes internationaux, ont confirmé la présence de ressources minières significatives dans plusieurs zones du pays. L'exploitation de ces ressources reste une question très sensible, soulevant des débats entre partisans du développement économique et défenseurs de l'environnement et de la souveraineté nationale.</p>
+      </div>
+
+      <div class="resource-grid">
+        <div class="resource-card resource-card--gold">
+          <div class="resource-card__icon">🥇</div>
+          <h3>Or et argent</h3>
+          <p>Le nord d'Haïti, notamment la zone de Morne Bossa (département du Nord), recèle d'importants gisements d'or et d'argent. Des estimations évoquent plusieurs milliards de dollars de réserves potentielles. Des permis miniers ont été accordés à des sociétés étrangères, suscitant une vive controverse nationale.</p>
+        </div>
+        <div class="resource-card">
+          <div class="resource-card__icon">🔵</div>
+          <h3>Cuivre</h3>
+          <p>Des gisements de cuivre ont été identifiés, notamment dans la région du Massif du Nord. Le cuivre est un métal stratégique pour l'industrie électronique et les énergies renouvelables. Son exploitation reste à l'état de projet.</p>
+        </div>
+        <div class="resource-card resource-card--teal">
+          <div class="resource-card__icon">🧱</div>
+          <h3>Bauxite</h3>
+          <p>La bauxite, minerai d'aluminium, a été exploitée en Haïti de 1952 à 1982 par la Reynolds Metals Company, une entreprise américaine. Cette exploitation a généré des revenus pour l'État haïtien mais a laissé des zones déboisées et dégradées dans le département du Sud.</p>
+        </div>
+        <div class="resource-card resource-card--red">
+          <div class="resource-card__icon">🪨</div>
+          <h3>Calcaire et marbre</h3>
+          <p>Le calcaire est la ressource minérale la plus exploitée actuellement. Il sert à la production de ciment et dans la construction. Des gisements de marbre ont également été identifiés mais restent largement inexploités.</p>
+        </div>
+        <div class="resource-card resource-card--green">
+          <div class="resource-card__icon">💎</div>
+          <h3>Phosphate et sel</h3>
+          <p>Des gisements de phosphate ont été identifiés dans plusieurs zones du pays. Le sel marin est extrait artisanalement dans certaines régions côtières. Ces ressources pourraient être développées pour réduire les importations de produits chimiques agricoles.</p>
+        </div>
+        <div class="resource-card resource-card--teal">
+          <div class="resource-card__icon">🌊</div>
+          <h3>Hydrocarbures offshore</h3>
+          <p>Des études sismiques ont suggéré la possible présence d'hydrocarbures dans les eaux territoriales haïtiennes. La question n'est pas définitivement tranchée faute d'exploration complète. La gouvernance de ces ressources potentielles est un enjeu souverain majeur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOURISME ECONOMIQUE -->
+  <section class="section" aria-labelledby="tourisme-eco-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Secteur à fort potentiel</span>
+        <h2 id="tourisme-eco-heading">Tourisme : un potentiel immense</h2>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <h3>Haïti, destination touristique naturelle</h3>
+          <p>Haïti possède tous les atouts d'une destination touristique de premier plan : des plages parmi les plus belles des Caraïbes, des sites historiques uniques (Citadelle Laferrière, Palais Sans-Souci), une culture vivante et festive, une gastronomie riche et une nature encore préservée dans certaines zones. Le pays a accueilli, dans les années 1970 et 1980, des centaines de milliers de touristes par an.</p>
+          <p>L'instabilité politique, l'insécurité et la mauvaise perception internationale ont progressivement fait fuir les touristes. Le potentiel demeure intact mais sa valorisation nécessite stabilité politique, investissements en infrastructures et sécurité.</p>
+        </div>
+        <div class="info-box info-box--gold">
+          <h3>Labadee : un paradoxe révélateur</h3>
+          <p>Royal Caribbean, l'une des plus grandes compagnies de croisières mondiales, exploite depuis 1985 un enclave privée à Labadee, sur la côte nord d'Haïti. Des centaines de milliers de touristes américains y débarquent chaque année pour profiter des plages haïtiennes, sans jamais mettre le pied dans le reste du pays. La redevance versée par Royal Caribbean à l'État haïtien est modeste. Cet exemple illustre la dépossession touristique dont souffre Haïti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEFIS ET PERSPECTIVES -->
+  <section class="section section--alt" aria-labelledby="perspectives-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Avenir économique</span>
+        <h2 id="perspectives-heading">Défis et perspectives</h2>
+      </div>
+      <div class="two-col" style="margin-bottom:2rem;">
+        <div>
+          <h3 style="margin-bottom:1rem; font-family:var(--font-head);">Principaux défis structurels</h3>
+          <ul class="num-list">
+            <li>Instabilité politique chronique, frein majeur à tout investissement à long terme</li>
+            <li>Insécurité généralisée et emprise des gangs sur des zones entières du territoire national</li>
+            <li>Infrastructure insuffisante : routes, électricité, eau, télécommunications</li>
+            <li>Dépendance aux importations et déficit commercial structurel persistant</li>
+            <li>Fragilité du système bancaire et faible accès au crédit pour les PME</li>
+            <li>Corruption institutionnelle entravant l'efficacité de l'État et la collecte fiscale</li>
+            <li>Déforestation avancée et changement climatique aggravant les catastrophes naturelles</li>
+            <li>Fuite des cerveaux : exode des élites formées vers les pays plus stables</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="margin-bottom:1rem; font-family:var(--font-head);">Secteurs porteurs pour l'avenir</h3>
+          <ul class="num-list">
+            <li>Agro-industrie et transformation des produits agricoles locaux (café, cacao, fruits)</li>
+            <li>Tourisme culturel et historique (Citadelle, Jacmel, patrimoine colonial)</li>
+            <li>Énergies renouvelables solaires et éoliennes</li>
+            <li>Technologies et économie numérique (services, mobile money, fintech)</li>
+            <li>Pêche et aquaculture dans les eaux territoriales riches</li>
+            <li>Valorisation du vétiver et des huiles essentielles haïtiennes</li>
+            <li>Industrie culturelle et créative (musique, arts, artisanat de luxe)</li>
+            <li>Partenariats avec la diaspora pour des investissements productifs</li>
+          </ul>
+        </div>
+      </div>
+
+      <blockquote class="blockquote-haiti">
+        La pauvreté d'Haïti n'est pas une fatalité naturelle. Elle est le résultat de choix politiques, d'injustices historiques et de mécanismes d'exploitation qui ont systématiquement appauvri le pays au profit d'acteurs extérieurs depuis plus de deux siècles.
+        <cite>Synthèse des analyses économiques sur Haïti</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- AIDE INTERNATIONALE -->
+  <section class="section" aria-labelledby="aide-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Coopération internationale</span>
+        <h2 id="aide-heading">L'aide internationale et ses limites</h2>
+      </div>
+      <div class="info-box" style="margin-bottom:1.5rem;">
+        <h3>Un paradoxe de l'aide au développement</h3>
+        <p>Depuis des décennies, Haïti est l'un des pays qui reçoit le plus d'aide internationale par rapport à sa taille. Cependant, les résultats en matière de développement restent très limités. Les milliards de dollars investis après le séisme de 2010 ont profité en grande partie aux entreprises et ONG des pays donateurs, plutôt qu'à l'économie haïtienne locale. Une partie de l'aide a été détournée ou mal gérée.</p>
+        <p>Les conditions imposées par le FMI et la Banque mondiale dans les années 1980-1990 (libéralisation commerciale, suppression des protections tarifaires, privatisation des entreprises publiques) ont souvent aggravé la situation en détruisant des secteurs productifs locaux sans les remplacer par des alternatives viables.</p>
+      </div>
+      <div class="info-box info-box--gold">
+        <h3>MINUSTAH et MINUJUSTH : l'empreinte des missions onusiennes</h3>
+        <p>La Mission des Nations Unies pour la Stabilisation en Haïti (MINUSTAH, 2004-2017) et ses successeurs ont été déployés pendant des décennies en Haïti. Si ces missions ont contribué à un certain maintien de l'ordre, elles ont aussi été associées à des scandales graves : l'introduction du choléra en 2010 par des casques bleus népalais (épidémie ayant causé plus de 10 000 morts), des abus sexuels et des cas d'exploitation. La présence prolongée de forces étrangères a aussi alimenté un sentiment d'humiliation nationale.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <div class="footer__flag"><img src="assets/flags/haiti-flag.svg" alt="Drapeau haïtien" width="40" height="27" /></div>
+            <span class="footer__brand-name">Découvrir Haïti</span>
+          </div>
+          <p class="footer__desc">Plateforme culturelle et historique dédiée à Haïti, à sa mémoire, à sa culture, son histoire et ses institutions.</p>
+          <p class="footer__author">Par Kirlinger Jeune</p>
+        </div>
+        <div>
+          <p class="footer__heading">Histoire &amp; Territoire</p>
+          <ul class="footer__links">
+            <li><a href="histoire.html">Histoire générale</a></li>
+            <li><a href="chronologie.html">Chronologie</a></li>
+            <li><a href="dirigeants.html">Dirigeants</a></li>
+            <li><a href="departements.html">Départements</a></li>
+            <li><a href="constitution.html">Constitution</a></li>
+            <li><a href="economie.html">Économie</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Culture</p>
+          <ul class="footer__links">
+            <li><a href="culture.html">Culture haïtienne</a></li>
+            <li><a href="vodou.html">Vodou &amp; Lwa</a></li>
+            <li><a href="gastronomie.html">Gastronomie</a></li>
+            <li><a href="jours-feries.html">Jours fériés</a></li>
+            <li><a href="tourisme.html">Tourisme</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">À propos</p>
+          <ul class="footer__links">
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Découvrir Haïti — <a href="contact.html">Kirlinger Jeune</a></p>
+        <p>L'Union fait la Force</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Retour en haut de page">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
