@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Découvrir Haïti — Plateforme culturelle et historique</title>
+  <meta name="description" content="Découvrir Haïti est une plateforme culturelle et historique dédiée à Haïti, sa mémoire, sa culture, son histoire et ses institutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand" aria-label="Accueil Découvrir Haïti">
+        <div class="navbar__flag">
+          <img src="assets/flags/haiti-flag.svg" alt="Drapeau haïtien" width="36" height="24" />
+        </div>
+        <div class="navbar__logo">
+          Découvrir Haïti
+          <span>Plateforme culturelle &amp; historique</span>
+        </div>
+      </a>
+      <button class="navbar__toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__menu" id="main-menu" role="list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="histoire.html">Histoire</a></li>
+        <li><a href="chronologie.html">Chronologie</a></li>
+        <li><a href="dirigeants.html">Dirigeants</a></li>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="vodou.html">Vodou</a></li>
+        <li><a href="gastronomie.html">Gastronomie</a></li>
+        <li><a href="jours-feries.html">Jours fériés</a></li>
+        <li><a href="tourisme.html">Tourisme</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-label="Présentation de Haïti">
+    <div class="hero__shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__eyebrow">Plateforme culturelle &amp; historique</div>
+        <h1 class="hero__title">
+          Découvrez <em>Haïti</em>,<br />la Perle des Antilles
+        </h1>
+        <p class="hero__subtitle">
+          Premier État noir libre du monde, berceau d'une révolution unique dans l'histoire de l'humanité.
+          Explorez l'histoire, la culture, les traditions et les institutions d'une nation extraordinaire.
+        </p>
+        <div class="hero__actions">
+          <a href="histoire.html" class="btn btn--primary">Explorer l'histoire</a>
+          <a href="#sections" class="btn btn--outline">Voir les sections</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__flag" aria-hidden="true">
+      <img class="hero__flag-img" src="assets/flags/haiti-flag.svg" alt="Drapeau d'Haïti" width="280" height="187" />
+    </div>
+    <div class="hero__scroll" aria-hidden="true">Défiler</div>
+  </section>
+
+  <!-- ===== INTRODUCTION ===== -->
+  <section class="section section--alt" aria-labelledby="intro-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">À propos d'Haïti</span>
+        <h2 id="intro-heading">Une nation au destin exceptionnel</h2>
+        <p>Fondée le 1er janvier 1804, Haïti est la première république noire indépendante du monde, né de la seule révolution d'esclaves victorieuse de l'histoire.</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-card__value">1804</div>
+          <div class="stat-card__label">Année d'indépendance</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__value">27 750</div>
+          <div class="stat-card__label">km² de superficie</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__value">11 M+</div>
+          <div class="stat-card__label">Habitants</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__value">2</div>
+          <div class="stat-card__label">Langues officielles</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__value">1re</div>
+          <div class="stat-card__label">République noire libre</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTIONS NAVIGATION ===== -->
+  <section class="section" id="sections" aria-labelledby="nav-sections-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Explorer</span>
+        <h2 id="nav-sections-heading">Les grandes sections</h2>
+        <p>Parcourez l'ensemble des thématiques qui constituent l'identité haïtienne.</p>
+      </div>
+      <div class="cards-grid">
+
+        <article class="card">
+          <div class="card__icon">📜</div>
+          <div class="card__body">
+            <h3>Histoire</h3>
+            <p>Des Taïnos à la Révolution haïtienne, en passant par la colonisation française et l'indépendance.</p>
+            <a href="histoire.html" class="card__link">Découvrir l'histoire</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__icon card__icon--red">🗓️</div>
+          <div class="card__body">
+            <h3>Chronologie</h3>
+            <p>Une frise chronologique des grands événements qui ont façonné la nation haïtienne depuis ses origines.</p>
+            <a href="chronologie.html" class="card__link">Voir la chronologie</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__icon card__icon--gold">👤</div>
+          <div class="card__body">
+            <h3>Dirigeants</h3>
+            <p>Les présidents, gouverneurs, empereurs et figures historiques qui ont dirigé Haïti depuis 1804.</p>
+            <a href="dirigeants.html" class="card__link">Voir les dirigeants</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__icon card__icon--green">⚖️</div>
+          <div class="card__body">
+            <h3>Constitution</h3>
+            <p>Les principes fondamentaux, la structure de l'État et les institutions qui régissent Haïti.</p>
+            <a href="constitution.html" class="card__link">Lire la constitution</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__icon card__icon--purple">🎨</div>
+          <div class="card__body">
+            <h3>Culture</h3>
+            <p>Langue créole, littérature, musique kompa, peinture naïve — une identité culturelle vivante et foisonnante.</p>
+            <a href="culture.html" class="card__link">Explorer la culture</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__icon card__icon--red">🔱</div>
+          <div class="card__body">
+            <h3>Vodou</h3>
+            <p>Origines africaines, rôle dans la société haïtienne et présentation des grands Lwa de la tradition vodou.</p>
+            <a href="vodou.html" class="card__link">Découvrir le Vodou</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__icon card__icon--gold">🍲</div>
+          <div class="card__body">
+            <h3>Gastronomie</h3>
+            <p>Griot, joumou, pain patate — les saveurs authentiques de la cuisine haïtienne et leur histoire.</p>
+            <a href="gastronomie.html" class="card__link">Goûter la cuisine</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__icon card__icon--teal">🎉</div>
+          <div class="card__body">
+            <h3>Jours fériés</h3>
+            <p>Les fêtes nationales, commémorations et jours fériés qui rythment le calendrier haïtien.</p>
+            <a href="jours-feries.html" class="card__link">Voir les fêtes</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__icon card__icon--green">🏔️</div>
+          <div class="card__body">
+            <h3>Tourisme</h3>
+            <p>La Citadelle, les plages, les sites historiques et les paysages naturels incontournables d'Haïti.</p>
+            <a href="tourisme.html" class="card__link">Explorer les sites</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT PLATFORM ===== -->
+  <section class="section section--dark" aria-labelledby="platform-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Notre mission</span>
+        <h2 id="platform-heading">À propos de cette plateforme</h2>
+      </div>
+      <div style="max-width:780px; margin:0 auto; text-align:center;">
+        <p style="color:rgba(255,255,255,.8); font-size:1.1rem; margin-bottom:1.5rem;">
+          <strong style="color:var(--gold);">Découvrir Haïti</strong> est une plateforme culturelle et historique indépendante dédiée à la préservation et à la transmission du patrimoine haïtien.
+          Notre ambition est de constituer l'une des références francophones les plus complètes sur l'histoire, la culture et les institutions d'Haïti.
+        </p>
+        <p style="color:rgba(255,255,255,.65); margin-bottom:2rem;">
+          Ce projet est conçu pour grandir. Chaque section peut s'enrichir de nouvelles recherches, témoignages, documents historiques et ressources pédagogiques.
+          Nous accueillons toute contribution sérieuse visant à approfondir notre connaissance collective d'Haïti.
+        </p>
+        <a href="contact.html" class="btn btn--gold">Contribuer au projet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <div class="footer__flag">
+              <img src="assets/flags/haiti-flag.svg" alt="Drapeau haïtien" width="40" height="27" />
+            </div>
+            <span class="footer__brand-name">Découvrir Haïti</span>
+          </div>
+          <p class="footer__desc">Plateforme culturelle et historique dédiée à Haïti, à sa mémoire, à sa culture, son histoire et ses institutions.</p>
+          <p class="footer__author">Par Kirlinger Jeune</p>
+        </div>
+        <div>
+          <p class="footer__heading">Histoire</p>
+          <ul class="footer__links">
+            <li><a href="histoire.html">Histoire générale</a></li>
+            <li><a href="chronologie.html">Chronologie</a></li>
+            <li><a href="dirigeants.html">Dirigeants</a></li>
+            <li><a href="constitution.html">Constitution</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Culture</p>
+          <ul class="footer__links">
+            <li><a href="culture.html">Culture haïtienne</a></li>
+            <li><a href="vodou.html">Vodou &amp; Lwa</a></li>
+            <li><a href="gastronomie.html">Gastronomie</a></li>
+            <li><a href="jours-feries.html">Jours fériés</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">À propos</p>
+          <ul class="footer__links">
+            <li><a href="tourisme.html">Tourisme</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Découvrir Haïti — <a href="contact.html">Kirlinger Jeune</a></p>
+        <p>L'Union fait la Force</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Retour en haut de page">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dirigeants d'Haïti — Découvrir Haïti</title>
+  <meta name="description" content="Présidents, empereurs, gouverneurs et grandes figures politiques qui ont dirigé Haïti depuis son indépendance en 1804." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .search-bar {
+      max-width: 480px;
+      margin: 0 auto 3rem;
+      position: relative;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: .75rem 1.25rem .75rem 3rem;
+      border: 2px solid var(--border);
+      border-radius: 999px;
+      font-family: var(--font-body);
+      font-size: .95rem;
+      outline: none;
+      transition: border-color .25s;
+    }
+    .search-bar input:focus { border-color: var(--blue-haiti); }
+    .search-bar::before {
+      content: '🔍';
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: .9rem;
+    }
+    .era-title {
+      font-family: var(--font-head);
+      font-size: 1.4rem;
+      color: var(--blue-haiti);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: .5rem;
+      margin: 3rem 0 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <div class="navbar__flag"><img src="assets/flags/haiti-flag.svg" alt="Drapeau haïtien" width="36" height="24" /></div>
+        <div class="navbar__logo">Découvrir Haïti<span>Plateforme culturelle &amp; historique</span></div>
+      </a>
+      <button class="navbar__toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__menu" id="main-menu" role="list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="histoire.html">Histoire</a></li>
+        <li><a href="chronologie.html">Chronologie</a></li>
+        <li><a href="dirigeants.html">Dirigeants</a></li>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="vodou.html">Vodou</a></li>
+        <li><a href="gastronomie.html">Gastronomie</a></li>
+        <li><a href="jours-feries.html">Jours fériés</a></li>
+        <li><a href="tourisme.html">Tourisme</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <p class="page-header__breadcrumb"><a href="index.html">Accueil</a> › Dirigeants</p>
+      <h1>Les Dirigeants d'Haïti</h1>
+      <p>Présidents, empereurs, gouverneurs et grandes figures historiques depuis 1804</p>
+    </div>
+  </header>
+
+  <section class="section section--alt">
+    <div class="container">
+
+      <div class="search-bar">
+        <input type="search" id="leader-search" placeholder="Rechercher un dirigeant…" aria-label="Rechercher un dirigeant" />
+      </div>
+
+      <!-- FONDATEURS -->
+      <h2 class="era-title">Les Pères fondateurs</h2>
+      <div class="cards-grid">
+
+        <article class="leader-card">
+          <div class="leader-card__header">🏛️</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Jean-Jacques Dessalines</h3>
+            <p class="leader-card__period">Gouverneur général (1804) — Empereur Jacques Ier (1804–1806)</p>
+            <p class="leader-card__desc">Ancien esclave devenu général brillant, Dessalines fut le principal artisan de la victoire contre les forces napoléoniennes. Il proclama l'indépendance d'Haïti le 1er janvier 1804 à Gonaïves, devenant le père fondateur de la nation. Proclamé Empereur en 1804, il fut assassiné en 1806. Son nom est gravé dans l'hymne national haïtien.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">⚔️</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Toussaint Louverture</h3>
+            <p class="leader-card__period">Gouverneur général (1801–1802)</p>
+            <p class="leader-card__desc">Né esclave, Toussaint Louverture devint l'un des plus grands stratèges militaires de son époque. Il abolit l'esclavage à Saint-Domingue en 1793, rédigea la Constitution de 1801 et fit de Saint-Domingue une colonie quasi indépendante. Trahi et déporté en France par Napoléon, il mourut au Fort de Joux le 7 avril 1803. Symbole universel de la liberté.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">👑</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Henri Christophe</h3>
+            <p class="leader-card__period">Président du Nord (1807–1811) — Roi Henri Ier (1811–1820)</p>
+            <p class="leader-card__desc">Ancien esclave d'origine inconnue, Henri Christophe gouverna le nord d'Haïti avec une main de fer. Il fit bâtir la Citadelle Laferrière et le Palais Sans-Souci — chefs-d'œuvre architecturaux aujourd'hui classés au patrimoine mondial de l'UNESCO. Atteint d'une paralysie, il se suicida en 1820.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">🕊️</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Alexandre Pétion</h3>
+            <p class="leader-card__period">Président de la République du Sud (1807–1818)</p>
+            <p class="leader-card__desc">Mulâtre de la bourgeoisie libre, Pétion gouverna la République du Sud avec une philosophie résolument républicaine et égalitariste. Il distribua des terres aux paysans, accueillit Simón Bolívar et lui fournit armes et soldats pour libérer l'Amérique du Sud. Considéré comme un président humaniste et progressiste.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- XIXe SIÈCLE -->
+      <h2 class="era-title">Le XIXe siècle (1818–1915)</h2>
+      <div class="cards-grid">
+
+        <article class="leader-card">
+          <div class="leader-card__header">🗺️</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Jean-Pierre Boyer</h3>
+            <p class="leader-card__period">Président (1818–1843)</p>
+            <p class="leader-card__desc">Boyer réunifica Haïti en 1820 après la mort de Christophe et Pétion. En 1822, il annexa la partie espagnole de l'île. En 1825, il accepta de payer 150 millions de francs-or à la France pour obtenir la reconnaissance internationale. Renversé en 1843, il s'exila en Europe.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">🏛️</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Faustin Soulouque</h3>
+            <p class="leader-card__period">Président (1847–1849) — Empereur Faustin Ier (1849–1859)</p>
+            <p class="leader-card__desc">Général de l'armée, élu président par l'élite qui pensait le manipuler, Soulouque prit en main le pouvoir et se proclama Empereur en 1849. Il tenta à deux reprises de reprendre la partie orientale de l'île. Renversé en 1859, il s'exila en Jamaïque puis en France.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">📚</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Lysius Salomon</h3>
+            <p class="leader-card__period">Président (1879–1888)</p>
+            <p class="leader-card__desc">Économiste et homme d'État, Salomon fonda la Banque nationale d'Haïti en 1880. Il modernisa l'administration et favorisa l'éducation. Son mandat, marqué par des réformes économiques importantes, fut cependant émaillé de troubles politiques.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">🎓</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Florvil Hyppolite</h3>
+            <p class="leader-card__period">Président (1889–1896)</p>
+            <p class="leader-card__desc">Son mandat fut marqué par d'importants travaux d'infrastructure, notamment la construction de ponts et l'extension du réseau télégraphique. Il résista aux pressions américaines pour céder la péninsule de Mole Saint-Nicolas comme base navale.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">🌹</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Anténor Firmin</h3>
+            <p class="leader-card__period">Intellectuel et homme politique (1850–1911)</p>
+            <p class="leader-card__desc">Intellectuel haïtien majeur, Firmin publia en 1885 <em>De l'égalité des races humaines</em>, réfutation savante du racisme scientifique de Gobineau. Candidat à la présidence, il ne put jamais accéder au pouvoir malgré son influence intellectuelle immense.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">✊</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Charlemagne Péralte</h3>
+            <p class="leader-card__period">Chef de la résistance Cacos (1883–1919)</p>
+            <p class="leader-card__desc">Officier de l'armée haïtienne, Charlemagne Péralte organisa la résistance armée contre l'occupation américaine. À la tête de plusieurs milliers de « Cacos », il harcela les forces occupantes. Il fut assassiné le 1er novembre 1919 par un agent américain. Son image crucifiée, diffusée par les Américains pour terroriser, devint un symbole de martyrat et de résistance nationale.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- OCCUPATION AMÉRICAINE -->
+      <h2 class="era-title">Présidents de l'époque de l'occupation (1915–1934)</h2>
+      <div class="cards-grid">
+
+        <article class="leader-card">
+          <div class="leader-card__header">🏛️</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Sudre Dartiguenave</h3>
+            <p class="leader-card__period">Président (1915–1922)</p>
+            <p class="leader-card__desc">Président élu par le parlement sous pression américaine après le débarquement des Marines. Signa le traité controversé de 1915 donnant aux États-Unis le contrôle des finances haïtiennes. Son mandat est associé à la soumission au pouvoir occupant.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">🏛️</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Louis Borno</h3>
+            <p class="leader-card__period">Président (1922–1930)</p>
+            <p class="leader-card__desc">Avocat et diplomate, Borno gouverna sous l'étroite tutelle américaine. Il s'appuya sur les occupants pour gouverner sans parlement. Son administration vit néanmoins quelques investissements en infrastructure et en santé publique.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">🕊️</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Sténio Vincent</h3>
+            <p class="leader-card__period">Président (1930–1941)</p>
+            <p class="leader-card__desc">Nationaliste haïtien, Vincent négocia habilement le retrait des troupes américaines en 1934. Sous son mandat, Haïti retrouva sa pleine souveraineté formelle. Il renforça le mouvement culturel indigéniste qui valorisait les traditions haïtiennes.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ERE POST-OCCUPATION -->
+      <h2 class="era-title">L'ère post-occupation et la montée du duvaliérisme (1934–1957)</h2>
+      <div class="cards-grid">
+
+        <article class="leader-card">
+          <div class="leader-card__header">📖</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Élie Lescot</h3>
+            <p class="leader-card__period">Président (1941–1946)</p>
+            <p class="leader-card__desc">Renversé par une révolution populaire en 1946, son mandat fut marqué par la complicité avec les États-Unis, la campagne anti-vodou de 1941–1942 menée avec l'Église catholique (destruction de temples, persécutions), et l'entrée en guerre aux côtés des Alliés en 1941.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">🏛️</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Dumarsais Estimé</h3>
+            <p class="leader-card__period">Président (1946–1950)</p>
+            <p class="leader-card__desc">Premier président noir depuis l'époque de Salomon, Estimé symbolisa l'émergence politique de la classe moyenne noire. Il promulgua une constitution progressiste, développa le tourisme et les droits des travailleurs. Renversé par un coup d'État militaire en 1950.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">⚔️</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Paul Magloire</h3>
+            <p class="leader-card__period">Président (1950–1956)</p>
+            <p class="leader-card__desc">Général et président, Magloire présida une période de relative stabilité économique. L'ouragan Hazel (1954) dévasta toutefois le pays. Renversé en 1956 lors d'une crise politique, il s'exila.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- DUVALIÉRISME -->
+      <h2 class="era-title">La dictature duvaliériste (1957–1986)</h2>
+      <div class="cards-grid">
+
+        <article class="leader-card">
+          <div class="leader-card__header">🩺</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">François Duvalier « Papa Doc »</h3>
+            <p class="leader-card__period">Président (1957–1964) — Président à vie (1964–1971)</p>
+            <p class="leader-card__desc">Médecin et anthropologue, Duvalier remporta les élections en 1957 avec le soutien de l'armée. Il instaura une dictature féroce, éradiquant toute opposition, créant les Tonton Macoutes. En 1964, il se proclama président à vie. Son régime causa l'exil de plus de 100 000 Haïtiens et le massacre de milliers d'opposants.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">🏛️</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Jean-Claude Duvalier « Baby Doc »</h3>
+            <p class="leader-card__period">Président à vie (1971–1986)</p>
+            <p class="leader-card__desc">Succédant à son père à 19 ans, Jean-Claude maintint la dictature mais l'assouplit légèrement pour attirer les investissements étrangers. Marié à Michèle Bennett en 1980, sa vie de luxe ostentatoire contrastait avec la misère du peuple. Un soulèvement populaire le força à l'exil en France le 7 février 1986.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ERE DEMOCRATIQUE -->
+      <h2 class="era-title">La période démocratique (1986–aujourd'hui)</h2>
+      <div class="cards-grid">
+
+        <article class="leader-card">
+          <div class="leader-card__header">⛪</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Jean-Bertrand Aristide</h3>
+            <p class="leader-card__period">Président (1991, 1994–1996, 2001–2004)</p>
+            <p class="leader-card__desc">Prêtre salésien des bidonvilles de Port-au-Prince, Aristide remporta les premières élections libres d'Haïti en 1990 avec 67 % des voix. Renversé par un coup d'État militaire en 1991, il revint au pouvoir en 1994 grâce à une intervention américaine. Réélu en 2000, il fut contraint à l'exil en 2004.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">🎓</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">René Préval</h3>
+            <p class="leader-card__period">Président (1996–2001, 2006–2011)</p>
+            <p class="leader-card__desc">Agronome proche d'Aristide, Préval fut le seul président haïtien à terminer deux mandats complets. Sa deuxième présidence coïncida avec le séisme dévastateur de janvier 2010, qu'il dut gérer dans des conditions extrêmes. Figure de modération dans la politique haïtienne.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">🎵</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Michel Martelly</h3>
+            <p class="leader-card__period">Président (2011–2016)</p>
+            <p class="leader-card__desc">Chanteur de kompa populaire connu sous le nom de « Sweet Micky », Martelly remporta l'élection présidentielle de 2011. Son mandat fut marqué par des investissements dans l'éducation (programme EBA — École à Bureaucratie Accessible), des tensions politiques et des allégations de corruption.</p>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <div class="leader-card__header">🌾</div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">Jovenel Moïse</h3>
+            <p class="leader-card__period">Président (2017–2021)</p>
+            <p class="leader-card__desc">Entrepreneur agricole, Moïse fut élu en 2016. Son mandat fut marqué par des crises politiques profondes, des manifestations populaires massives (mouvement PetroChallenge), la montée des gangs armés et la pandémie de Covid-19. Il fut assassiné à son domicile le 7 juillet 2021 dans des circonstances encore non entièrement élucidées.</p>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <div class="footer__flag"><img src="assets/flags/haiti-flag.svg" alt="Drapeau haïtien" width="40" height="27" /></div>
+            <span class="footer__brand-name">Découvrir Haïti</span>
+          </div>
+          <p class="footer__desc">Plateforme culturelle et historique dédiée à Haïti.</p>
+          <p class="footer__author">Par Kirlinger Jeune</p>
+        </div>
+        <div>
+          <p class="footer__heading">Histoire</p>
+          <ul class="footer__links">
+            <li><a href="histoire.html">Histoire générale</a></li>
+            <li><a href="chronologie.html">Chronologie</a></li>
+            <li><a href="dirigeants.html">Dirigeants</a></li>
+            <li><a href="constitution.html">Constitution</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Culture</p>
+          <ul class="footer__links">
+            <li><a href="culture.html">Culture haïtienne</a></li>
+            <li><a href="vodou.html">Vodou &amp; Lwa</a></li>
+            <li><a href="gastronomie.html">Gastronomie</a></li>
+            <li><a href="jours-feries.html">Jours fériés</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">À propos</p>
+          <ul class="footer__links">
+            <li><a href="tourisme.html">Tourisme</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Découvrir Haïti — <a href="contact.html">Kirlinger Jeune</a></p>
+        <p>L'Union fait la Force</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Retour en haut de page">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Découvrir Haïti</title>
+  <meta name="description" content="Contactez l'équipe de Découvrir Haïti pour toute question, suggestion ou contribution au projet." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .success-msg {
+      display: none;
+      background: #ecfdf5;
+      border: 1.5px solid #10b981;
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.25rem;
+      color: #065f46;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    .contact-info-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+    }
+    .contact-info-card h3 {
+      margin-bottom: 1.5rem;
+      padding-bottom: .75rem;
+      border-bottom: 2px solid var(--border);
+    }
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .contact-info-item .icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(0,32,159,.09);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .contact-info-item .text strong {
+      display: block;
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--text-light);
+      margin-bottom: .2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <div class="navbar__flag"><img src="assets/flags/haiti-flag.svg" alt="Drapeau haïtien" width="36" height="24" /></div>
+        <div class="navbar__logo">Découvrir Haïti<span>Plateforme culturelle &amp; historique</span></div>
+      </a>
+      <button class="navbar__toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+      <ul class="navbar__menu" id="main-menu" role="list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="histoire.html">Histoire</a></li>
+        <li><a href="chronologie.html">Chronologie</a></li>
+        <li><a href="dirigeants.html">Dirigeants</a></li>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="vodou.html">Vodou</a></li>
+        <li><a href="gastronomie.html">Gastronomie</a></li>
+        <li><a href="jours-feries.html">Jours fériés</a></li>
+        <li><a href="tourisme.html">Tourisme</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <p class="page-header__breadcrumb"><a href="index.html">Accueil</a> › Contact</p>
+      <h1>Nous contacter</h1>
+      <p>Une question, une suggestion ou une contribution au projet ? Nous vous répondrons avec plaisir.</p>
+    </div>
+  </header>
+
+  <section class="section section--alt" aria-labelledby="contact-heading">
+    <div class="container">
+      <div style="display:grid; gap:2.5rem; grid-template-columns:1fr 1.6fr; align-items:start;">
+
+        <!-- INFOS -->
+        <div>
+          <div class="contact-info-card" style="margin-bottom:1.5rem;">
+            <h3>À propos du projet</h3>
+            <p style="color:var(--text-light); font-size:.9rem; margin-bottom:1.25rem;">
+              <strong>Découvrir Haïti</strong> est une plateforme culturelle et historique indépendante créée par <strong>Kirlinger Jeune</strong>.
+              Ce projet est dédié à la préservation et à la transmission du patrimoine haïtien à travers une ressource numérique de référence.
+            </p>
+            <div class="contact-info-item">
+              <div class="icon">✍️</div>
+              <div class="text">
+                <strong>Auteur</strong>
+                Kirlinger Jeune
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="icon">🌐</div>
+              <div class="text">
+                <strong>Projet</strong>
+                Découvrir Haïti — Plateforme culturelle &amp; historique
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="icon">📅</div>
+              <div class="text">
+                <strong>Lancé en</strong>
+                2024
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <h3>Comment contribuer ?</h3>
+            <p style="color:var(--text-light); font-size:.875rem; margin-bottom:1rem;">Vous pouvez contribuer à ce projet de plusieurs façons :</p>
+            <ul style="list-style:disc; padding-left:1.25rem; color:var(--text-light); font-size:.875rem; display:flex; flex-direction:column; gap:.5rem;">
+              <li>Signaler des inexactitudes historiques</li>
+              <li>Proposer des sources et références bibliographiques</li>
+              <li>Contribuer du contenu photographique libre de droits</li>
+              <li>Suggérer de nouvelles sections ou améliorations</li>
+              <li>Partager votre expertise sur un sujet particulier</li>
+              <li>Soutenir le projet par votre encouragement</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- FORMULAIRE -->
+        <div>
+          <div class="contact-form">
+            <h2 id="contact-heading" style="margin-bottom:1.75rem; font-size:1.5rem;">Envoyer un message</h2>
+
+            <div id="form-success" class="success-msg" role="alert">
+              ✓ Votre message a été envoyé avec succès. Nous vous répondrons dans les meilleurs délais.
+            </div>
+
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">Prénom <span style="color:var(--red-haiti)">*</span></label>
+                  <input type="text" id="first-name" name="first-name" placeholder="Votre prénom" required autocomplete="given-name" />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Nom <span style="color:var(--red-haiti)">*</span></label>
+                  <input type="text" id="last-name" name="last-name" placeholder="Votre nom" required autocomplete="family-name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Adresse e-mail <span style="color:var(--red-haiti)">*</span></label>
+                <input type="email" id="email" name="email" placeholder="votre@email.com" required autocomplete="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Objet</label>
+                <select id="subject" name="subject">
+                  <option value="">Sélectionnez un objet…</option>
+                  <option value="question">Question sur le contenu</option>
+                  <option value="correction">Signaler une erreur</option>
+                  <option value="contribution">Proposition de contribution</option>
+                  <option value="suggestion">Suggestion d'amélioration</option>
+                  <option value="collaboration">Proposition de collaboration</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span style="color:var(--red-haiti)">*</span></label>
+                <textarea id="message" name="message" placeholder="Votre message…" required minlength="10"></textarea>
+              </div>
+
+              <div class="form-group" style="margin-bottom:0;">
+                <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center; padding:1rem;">
+                  Envoyer le message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section section--dark" aria-labelledby="about-project-heading">
+    <div class="container">
+      <div style="max-width:680px; margin:0 auto; text-align:center;">
+        <span class="tag">Notre engagement</span>
+        <h2 id="about-project-heading" style="margin-top:1rem;">Un projet pour la mémoire haïtienne</h2>
+        <p style="color:rgba(255,255,255,.8); margin:1.5rem 0;">
+          Découvrir Haïti est né d'un désir profond de donner à Haïti la plateforme numérique qu'elle mérite — un espace sérieux, complet et accessible qui rende justice à la richesse extraordinaire de son histoire et de sa culture.
+          Ce projet est dédié à tous les Haïtiens du monde, à leurs enfants et à tous ceux qui souhaitent mieux connaître cette nation unique.
+        </p>
+        <blockquote style="font-family:var(--font-head); font-style:italic; font-size:1.3rem; color:var(--gold); border-left:3px solid var(--gold); padding-left:1.5rem; text-align:left; max-width:520px; margin:0 auto;">
+          « Deye mon, gen mon. »<br />
+          <cite style="font-family:var(--font-body); font-style:normal; font-size:.85rem; color:rgba(255,255,255,.5); display:block; margin-top:.5rem;">— Proverbe haïtien : Derrière les montagnes, il y a des montagnes.</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <div class="footer__flag"><img src="assets/flags/haiti-flag.svg" alt="Drapeau haïtien" width="40" height="27" /></div>
+            <span class="footer__brand-name">Découvrir Haïti</span>
+          </div>
+          <p class="footer__desc">Plateforme culturelle et historique dédiée à Haïti.</p>
+          <p class="footer__author">Par Kirlinger Jeune</p>
+        </div>
+        <div>
+          <p class="footer__heading">Histoire</p>
+          <ul class="footer__links">
+            <li><a href="histoire.html">Histoire générale</a></li>
+            <li><a href="chronologie.html">Chronologie</a></li>
+            <li><a href="dirigeants.html">Dirigeants</a></li>
+            <li><a href="constitution.html">Constitution</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Culture</p>
+          <ul class="footer__links">
+            <li><a href="culture.html">Culture haïtienne</a></li>
+            <li><a href="vodou.html">Vodou &amp; Lwa</a></li>
+            <li><a href="gastronomie.html">Gastronomie</a></li>
+            <li><a href="jours-feries.html">Jours fériés</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">À propos</p>
+          <ul class="footer__links">
+            <li><a href="tourisme.html">Tourisme</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Découvrir Haïti — <a href="contact.html">Kirlinger Jeune</a></p>
+        <p>L'Union fait la Force</p>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Retour en haut de page">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
