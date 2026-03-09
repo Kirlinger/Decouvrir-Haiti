@@ -251,7 +251,7 @@ p  { margin-bottom: 1rem; }
   min-height: 90vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(160deg, #00104e 0%, #00209F 35%, #00209F 50%, #9B0025 75%, #D21034 100%);
+  background: linear-gradient(160deg, #00104e 0%, #00209F 40%, #9B0025 70%, #D21034 100%);
   overflow: hidden;
   color: var(--white);
 }
