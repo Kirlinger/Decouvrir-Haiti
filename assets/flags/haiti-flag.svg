@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <!-- Top half: blue -->
+  <rect width="900" height="300" fill="#00209F"/>
+  <!-- Bottom half: red -->
+  <rect y="300" width="900" height="300" fill="#D21034"/>
+  <!-- White rectangle in the center for the coat of arms -->
+  <rect x="337.5" y="212.5" width="225" height="175" fill="white"/>
+  <!-- Palm tree (simplified) -->
+  <line x1="450" y1="350" x2="450" y2="250" stroke="#228B22" stroke-width="8"/>
+  <ellipse cx="450" cy="245" rx="40" ry="18" fill="#228B22"/>
+  <ellipse cx="420" cy="258" rx="25" ry="10" fill="#228B22" transform="rotate(-30,420,258)"/>
+  <ellipse cx="480" cy="258" rx="25" ry="10" fill="#228B22" transform="rotate(30,480,258)"/>
+  <!-- Cannon (simplified) -->
+  <rect x="415" y="340" width="70" height="20" rx="5" fill="#808080"/>
+  <rect x="410" y="338" width="12" height="24" rx="3" fill="#606060"/>
+  <!-- Cannons on sides -->
+  <rect x="375" y="345" width="40" height="12" rx="3" fill="#808080"/>
+  <rect x="485" y="345" width="40" height="12" rx="3" fill="#808080"/>
+  <!-- Flags on poles (simplified) -->
+  <line x1="395" y1="300" x2="395" y2="342" stroke="#8B4513" stroke-width="3"/>
+  <rect x="395" y="300" width="18" height="12" fill="#00209F"/>
+  <rect x="395" y="306" width="18" height="6" fill="#D21034"/>
+  <line x1="505" y1="300" x2="505" y2="342" stroke="#8B4513" stroke-width="3"/>
+  <rect x="487" y="300" width="18" height="12" fill="#00209F"/>
+  <rect x="487" y="306" width="18" height="6" fill="#D21034"/>
+  <!-- Banner -->
+  <rect x="360" y="358" width="180" height="20" fill="#00209F"/>
+  <text x="450" y="372" text-anchor="middle" fill="white" font-size="9" font-family="serif" font-weight="bold">L'UNION FAIT LA FORCE</text>
+</svg>
